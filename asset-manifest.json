@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/cov19-norway/static/css/main.22eb9bc4.chunk.css",
-    "main.js": "/cov19-norway/static/js/main.9924468d.chunk.js",
-    "main.js.map": "/cov19-norway/static/js/main.9924468d.chunk.js.map",
+    "main.js": "/cov19-norway/static/js/main.eb043c66.chunk.js",
+    "main.js.map": "/cov19-norway/static/js/main.eb043c66.chunk.js.map",
     "runtime-main.js": "/cov19-norway/static/js/runtime-main.7cefeabc.js",
     "runtime-main.js.map": "/cov19-norway/static/js/runtime-main.7cefeabc.js.map",
     "static/js/2.00e105fa.chunk.js": "/cov19-norway/static/js/2.00e105fa.chunk.js",
     "static/js/2.00e105fa.chunk.js.map": "/cov19-norway/static/js/2.00e105fa.chunk.js.map",
     "index.html": "/cov19-norway/index.html",
-    "precache-manifest.18d5f208e32b3c22806a5c2dc8283d4b.js": "/cov19-norway/precache-manifest.18d5f208e32b3c22806a5c2dc8283d4b.js",
+    "precache-manifest.d414c4da8573d0228202ae5c35adc6d7.js": "/cov19-norway/precache-manifest.d414c4da8573d0228202ae5c35adc6d7.js",
     "service-worker.js": "/cov19-norway/service-worker.js",
     "static/css/main.22eb9bc4.chunk.css.map": "/cov19-norway/static/css/main.22eb9bc4.chunk.css.map",
     "static/js/2.00e105fa.chunk.js.LICENSE.txt": "/cov19-norway/static/js/2.00e105fa.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.7cefeabc.js",
     "static/js/2.00e105fa.chunk.js",
     "static/css/main.22eb9bc4.chunk.css",
-    "static/js/main.9924468d.chunk.js"
+    "static/js/main.eb043c66.chunk.js"
   ]
 }
