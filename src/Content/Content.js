@@ -44,11 +44,8 @@ export const Content = () => {
     function getMunicipalities() {
         if (string) {
             let municips = []
-
             let temp = data[0].splice(1)
-
             temp.map(e => municips.push({value: e,label: e}))
-
             return municips
         }
     }
@@ -60,12 +57,6 @@ export const Content = () => {
 
     let count = cumulativeInfections[cumulativeInfections.length-1]
     let today = totalInfections[cumulativeInfections.length-1]
-
-    const testVals = [
-        { value: 'chocolate', label: 'Chocolate' },
-        { value: 'strawberry', label: 'Strawberry' },
-        { value: 'vanilla', label: 'Vanilla' }
-    ]
 
     if (!string) {
         return <Spinner />
