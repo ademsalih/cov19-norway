@@ -28,7 +28,7 @@ export const TotalGraph = ({x,total,daily}) => {
 				data: total
 			},
 			{
-				label: "Daglig",
+				label: "Nye",
 				fill: false,
 				lineTension: 0.1,
 				backgroundColor: "rgba(231,128,0,1)",
@@ -58,7 +58,7 @@ export const TotalGraph = ({x,total,daily}) => {
 				height={null}
 				width={null}
 				options={{
-					aspectRatio: 1.7
+					aspectRatio: 1.8
 				}}
 			/>
 		</div>
