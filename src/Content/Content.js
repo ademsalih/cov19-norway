@@ -60,7 +60,7 @@ export const Content = () => {
                 color: '#B2B2B2',
                 marginTop: '4.5em',
                 textAlign: 'center',
-                fontSize: '0.8em'
+                fontSize: '1em'
                 }}>Kommuneoversikt kommer snart</p>
         </div>
     )
