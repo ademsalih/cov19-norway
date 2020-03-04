@@ -44,9 +44,24 @@ export const Content = () => {
     function getMunicipalities() {
         if (string) {
             let municips = []
-            let temp = data[0].splice(1)
+            let temp = data[0].slice(0)
+            temp = temp.splice(1)
             temp.map(e => municips.push({value: e,label: e}))
             return municips
+        }
+    }
+
+    function getMunicipStats() {
+        if (string) {
+            let tmp = data.slice()
+            tmp = tmp.splice(1)
+
+            let totalStat = tmp[0].map((col, i) => tmp.map(row => row[i]));
+            totalStat.shift()
+
+            console.log(totalStat)
+
+            return totalStat
         }
     }
 
@@ -55,12 +70,15 @@ export const Content = () => {
     let cumulativeInfections = getTotalCumulativeInfections()
     let municipalities = getMunicipalities()
 
+    let municipStats = getMunicipStats()
+
     let count = cumulativeInfections[cumulativeInfections.length-1]
     let today = totalInfections[cumulativeInfections.length-1]
 
     if (!string) {
         return <Spinner />
     }
+
 
     return (
         <div className="content">
@@ -80,6 +98,8 @@ export const Content = () => {
                 name="color"
                 options={municipalities}
             />
+
+            <TotalGraph x={dates} total={municipStats} />
         </div>
     )
 }
