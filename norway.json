@@ -1,0 +1,230 @@
+{
+    "startDate": "2020-02-25",
+    "entries": [
+        {
+            "date": "25.02.20",
+            "municips": []
+        },
+        {
+            "date": "26.02.20",
+            "municips": [
+                {
+                    "municip": "Tromsø",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "date": "27.02.20",
+            "municips": [
+                {
+                    "municip": "Oslo",
+                    "count": 2
+                },
+                {
+                    "municip": "Bærum",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "date": "28.02.20",
+            "municips": [
+                {
+                    "municip": "Oslo",
+                    "count": 1
+                },
+                {
+                    "municip": "Bergen",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "date": "29.02.20",
+            "municips": [
+                {
+                    "municip": "Oslo",
+                    "count": 1
+                },
+                {
+                    "municip": "Bergen",
+                    "count": 4
+                }
+            ]
+        },
+        {
+            "date": "01.03.20",
+            "municips": [
+                {
+                    "municip": "Oslo",
+                    "count": 3
+                },
+                {
+                    "municip": "Bergen",
+                    "count": 1
+                },
+                {
+                    "municip": "Enebakk",
+                    "count": 3
+                },
+                {
+                    "municip": "Nes",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "date": "02.03.20",
+            "municips": [
+                {
+                    "municip": "Bergen",
+                    "count": 1
+                },
+                {
+                    "municip": "Stavanger",
+                    "count": 1
+                },
+                {
+                    "municip": "Kristiansand",
+                    "count": 2
+                },
+                {
+                    "municip": "Øygarden",
+                    "count": 2
+                }
+            ]
+        },
+        {
+            "date": "03.03.20",
+            "municips": [
+                {
+                    "municip": "Oslo",
+                    "count": 1
+                },
+                {
+                    "municip": "Bergen",
+                    "count": 3
+                },
+                {
+                    "municip": "Tromsø",
+                    "count": 1
+                },
+                {
+                    "municip": "Kristiansand",
+                    "count": 1
+                },
+                {
+                    "municip": "Drammen",
+                    "count": 2
+                }
+            ]
+        },
+        {
+            "date": "04.03.20",
+            "municips": [
+                {
+                    "municip": "Oslo",
+                    "count": 7
+                },
+                {
+                    "municip": "Bergen",
+                    "count": 5
+                },
+                {
+                    "municip": "Bærum",
+                    "count": 3
+                },
+                {
+                    "municip": "Trondheim",
+                    "count": 1
+                },
+                {
+                    "municip": "Molde",
+                    "count": 1
+                },
+                {
+                    "municip": "Haugesund",
+                    "count": 1
+                },
+                {
+                    "municip": "Stavanger",
+                    "count": 1
+                },
+                {
+                    "municip": "Lier",
+                    "count": 1
+                },
+                {
+                    "municip": "Asker",
+                    "count": 1
+                },
+                {
+                    "municip": "Drammen",
+                    "count": 6
+                },
+                {
+                    "municip": "Klepp",
+                    "count": 1
+                },
+                {
+                    "municip": "Nord-Fron",
+                    "count": 3
+                }
+            ]
+        },
+        {
+            "date": "05.03.20",
+            "municips": [
+                {
+                    "municip": "Oslo",
+                    "count": 3
+                },
+                {
+                    "municip": "Bergen",
+                    "count": 5
+                },
+                {
+                    "municip": "Drammen",
+                    "count": 1
+                },
+                {
+                    "municip": "Frosta",
+                    "count": 1
+                },
+                {
+                    "municip": "Sel",
+                    "count": 1
+                },
+                {
+                    "municip": "Ålesund",
+                    "count": 1
+                },
+                {
+                    "municip": "Stavanger",
+                    "count": 1
+                },
+                {
+                    "municip": "Sandnes",
+                    "count": 1
+                },
+                {
+                    "municip": "Ukjent",
+                    "count": 1
+                },
+                {
+                    "municip": "Fredrikstad",
+                    "count": 1
+                },
+                {
+                    "municip": "Trondheim",
+                    "count": 5
+                },
+                {
+                    "municip": "Skien",
+                    "count": 1
+                }
+            ]
+        }
+    ]
+}

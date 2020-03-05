@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3dfdeff72205a68b699c56e405a4e82e",
+    "revision": "21788d451267c60728ffe13c1c3630fe",
     "url": "/cov19-norway/index.html"
   },
   {
-    "revision": "38383adc846cb937cb87",
+    "revision": "d6618fde08211d098ab3",
     "url": "/cov19-norway/static/css/main.c1c5d019.chunk.css"
   },
   {
-    "revision": "e1f68dd7375a12d95521",
-    "url": "/cov19-norway/static/js/2.0791a4a5.chunk.js"
+    "revision": "45dda4261b6f3c90654d",
+    "url": "/cov19-norway/static/js/2.0fcc13a3.chunk.js"
   },
   {
-    "revision": "0b07733e8b5b49b7409964f37fe1a4de",
-    "url": "/cov19-norway/static/js/2.0791a4a5.chunk.js.LICENSE.txt"
+    "revision": "d2cf8d37946cd02abf2fe73b5ccb09c4",
+    "url": "/cov19-norway/static/js/2.0fcc13a3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "38383adc846cb937cb87",
-    "url": "/cov19-norway/static/js/main.8b8e4867.chunk.js"
+    "revision": "d6618fde08211d098ab3",
+    "url": "/cov19-norway/static/js/main.ef21f380.chunk.js"
   },
   {
     "revision": "931cbb22c4ee141265a0",
