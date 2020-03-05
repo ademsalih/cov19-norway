@@ -8,7 +8,6 @@ import { Municipality } from '../Municipality'
 import './style.css'
 
 export const Content = () => {
-    
     const [loading,setLoading] = useState(true);
     const [dates,setDates] = useState([]);
 
@@ -46,8 +45,8 @@ export const Content = () => {
             entries.map(x => {
                 let day = []
 
-                x["municips"].map(municip => {
-                    day.push(municip["count"])
+                x["municips"].map(m => {
+                    day.push(m["count"])
                 })
 
             
@@ -65,9 +64,12 @@ export const Content = () => {
             setTotal(lastOf(cumulated))
 
             entries.map((x,index) => {
-                x["municips"].map(municip => {
-                    let currMun = municip["municip"]
+                
+                x["municips"].map(m => {
+                    let currMun = m["municip"]
+
                     let municipFound = municipData.find(x => x["municip"] === currMun)
+
 
                     if (!municipFound) {
                         let newMun = {}
@@ -75,9 +77,12 @@ export const Content = () => {
                         newMun["municip"] = currMun
                         newMun["daily"] = new Array(daily.length).fill(0);
 
+                        
+
                         municipData.push(newMun)
                     }
-                    municipData.find(x => x["municip"] === currMun)["daily"][index] = municip["count"]
+
+                    municipData.find(x => x["municip"] === currMun)["daily"][index] = m["count"]
                 })
             })
 
@@ -85,6 +90,7 @@ export const Content = () => {
             let sortedMunicipData = municipData.sort((a,b) => {
                 return a["municip"] > b["municip"]
             })
+
 
             setMunicipData(sortedMunicipData)
 
@@ -94,8 +100,11 @@ export const Content = () => {
             setMunicips(selectMunicipList)
 
             let municipArray = sortedMunicipData.find(x => x["municip"] === municip)["daily"]
-            setMunicipDaily(municipArray)
-            setMunicipCumulative(cumulate(municipArray))
+
+            let municipArraySlice = municipArray.slice()
+            
+            setMunicipDaily(municipArraySlice)
+            setMunicipCumulative(cumulate(municipArraySlice))
 
             let totalForMunicips = sortedMunicipData.map(x => {
                 let entry = {}
@@ -150,11 +159,8 @@ export const Content = () => {
     /*---------------------------- Handler Methods ------------------------------*/
 
     function handleChange(e) {
-        console.log(e)
         setMunicip(e)
-
         let municipArray = municipData.find(x => x["municip"] === e)["daily"]
-
         setMunicipDaily(municipArray)
         setMunicipCumulative(cumulate(municipArray))
     }
@@ -172,15 +178,17 @@ export const Content = () => {
             <br/>
             <h3>KOMMUNEOVERSIKT</h3>
             <br/>
+
             <Select
                 className="basic-single"
                 classNamePrefix="select"
-                defaultValue={municips.filter(m => m["value"] === "Oslo")}
+                defaultValue={municips.find(m => m["label"] === municip)}
+                value={municips.find(m => m["label"] === municip)}
                 isDisabled={false}
                 isLoading={false}
                 isClearable={false}
                 isRtl={false}
-                isSearchable={true}
+                isSearchable={false}
                 name="color"
                 options={municips}
                 onChange={e => handleChange(e.value)}
