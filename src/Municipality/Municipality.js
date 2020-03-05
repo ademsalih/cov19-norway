@@ -38,9 +38,12 @@ export const Municipality = ({x,y}) => {
 
     return(
         <div>
-            <HorizontalBar data={data} height={null} width={null}
+            <HorizontalBar
+                data={data}
+                height={null}
+                width={null}
 				options={{
-					aspectRatio: 1.2
+					aspectRatio: 1
 				}}
             />
         </div>

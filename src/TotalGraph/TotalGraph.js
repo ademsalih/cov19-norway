@@ -58,7 +58,7 @@ export const TotalGraph = ({x,total,daily}) => {
 				height={null}
 				width={null}
 				options={{
-					aspectRatio: 1.8
+					aspectRatio: 1.9
 				}}
 			/>
 		</div>

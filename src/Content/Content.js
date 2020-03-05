@@ -157,7 +157,7 @@ export const Content = () => {
             <TotalGraph x={dates} total={cumulative(municipStats[municip])} daily={municipStats[municip]} />
             <br/>
             <br/>
-            <h3>FORDELING MELLOM KOMMUNER</h3>
+            <h3>FORDELING AV SMITTEDE</h3>
             <br/>
             <Municipality x={municipalities.map(e => e.label)} y={getTotalForMunicips()} />
             <br/>
