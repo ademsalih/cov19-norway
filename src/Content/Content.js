@@ -1,14 +1,11 @@
 import React, {useState} from 'react'
 import { TotalGraph } from '../TotalGraph'
-import { readString } from 'react-papaparse'
 import { Spinner } from '../Spinner'
-import { get } from '../api/getCSV.js'
+import { getJsonData } from '../api/getCSV.js'
 import { TotalBox } from '../TotalBox'
 import Select from 'react-select'
 import { Municipality } from '../Municipality'
 import './style.css'
-
-import { getJsonData } from '../api/getCSV.js'
 
 export const Content = () => {
     
@@ -22,7 +19,15 @@ export const Content = () => {
     const [total, setTotal] = useState(0);
 
     const [municips, setMunicips] = useState([]);
-    const [municip, setMunicip] = useState(0)
+    const [municip, setMunicip] = useState("Oslo");
+
+    const [municipDaily, setMunicipDaily] = useState([]);
+    const [municipCumulative, setMunicipCumulative] = useState([]);
+
+    const [municipData, setMunicipData] = useState([]);
+
+    const [municipTotalName, setMunicipTotalName] = useState([]);
+    const [municipTotalCount, setMunicipTotalCount] = useState([]);
 
     React.useEffect(() => {
         getJsonData().then(result => {
@@ -38,13 +43,11 @@ export const Content = () => {
 
             let municipData = []
 
-            let values = entries.map(x => {
+            entries.map(x => {
                 let day = []
 
                 x["municips"].map(municip => {
                     day.push(municip["count"])
-
-
                 })
 
             
@@ -56,16 +59,57 @@ export const Content = () => {
             let cumulated = cumulate(daily)
 
             setDaily(daily)
-
-            
-
-            setCumulative(cumulated)
+            setCumulative(cumulate(daily))
 
             setToday(lastOf(daily))
             setTotal(lastOf(cumulated))
 
+            entries.map((x,index) => {
+                x["municips"].map(municip => {
+                    let currMun = municip["municip"]
+                    let municipFound = municipData.find(x => x["municip"] === currMun)
+
+                    if (!municipFound) {
+                        let newMun = {}
+
+                        newMun["municip"] = currMun
+                        newMun["daily"] = new Array(daily.length).fill(0);
+
+                        municipData.push(newMun)
+                    }
+                    municipData.find(x => x["municip"] === currMun)["daily"][index] = municip["count"]
+                })
+            })
 
 
+            let sortedMunicipData = municipData.sort((a,b) => {
+                return a["municip"] > b["municip"]
+            })
+
+            setMunicipData(sortedMunicipData)
+
+            let allMunicips = sortedMunicipData.map(x => x["municip"])
+            let selectMunicipList = allMunicips.map((e) => ({value: e,label: e}))
+
+            setMunicips(selectMunicipList)
+
+            let municipArray = sortedMunicipData.find(x => x["municip"] === municip)["daily"]
+            setMunicipDaily(municipArray)
+            setMunicipCumulative(cumulate(municipArray))
+
+            let totalForMunicips = sortedMunicipData.map(x => {
+                let entry = {}
+                entry["total"] = x["daily"].reduce((a, b) => a + b, 0)
+                entry["municip"] = x["municip"]
+                return entry
+            })
+
+            totalForMunicips = totalForMunicips.sort((a,b) => {
+                return a["total"] > b["total"]
+            })
+
+            setMunicipTotalName(totalForMunicips.map(x => x["municip"]))
+            setMunicipTotalCount(totalForMunicips.map(x => x["total"]))
 
             setLoading(false)
         })
@@ -106,189 +150,18 @@ export const Content = () => {
     /*---------------------------- Handler Methods ------------------------------*/
 
     function handleChange(e) {
-        setMunicips(e)
+        console.log(e)
+        setMunicip(e)
+
+        let municipArray = municipData.find(x => x["municip"] === e)["daily"]
+
+        setMunicipDaily(municipArray)
+        setMunicipCumulative(cumulate(municipArray))
     }
-
-
-
 
     if (loading) {
         return <Spinner />
     }
-
-    
-
-
-    /////////////////////////////// OLD CODE ////////////////////////////////////
-    /*
-    const [string, setString] = useState("")
-    const [municip, setMunicip] = useState(0)
-
-    React.useEffect(() => {
-          get().then(result => setString(result))
-     }, [])
-    
-    var results = readString(string)
-    let data = results['data']
-
-    function csvToJSON() {
-        let dict = {}
-
-        dict["startDate"] = "2020-02-25"
-
-        dict["entries"] = []
-
-        let tempData = data.slice()
-        tempData = tempData.splice(1)
-
-        let ms = data[0]
-
-        tempData.map((row) => {
-            
-            var newEntry = {}
-            var cities = []
-
-            row.map((x,index) => {
-
-                if (index === 0) {
-                    newEntry = {}
-                    newEntry["date"] = row[0]
-                } else {
-                    
-                    if (x > 0) {
-                        var by = ms[index]
-
-                        var antall = parseInt(x)
-
-                        cities.push({"municip": by,"count":antall})
-                        
-                    }
-                }
-
-            })
-
-            newEntry["municips"] = cities
-
-            dict["entries"].push(newEntry)
-        })
-
-        var stringAgain = JSON.stringify(dict,null,4);
-        console.log(stringAgain)
-    }
-
-
-
-    
-
-    
-
-    let jsonData2 = csvToJSON()
-    
-    function getDates() {
-        let dates = []
-        data.map(x => dates.push(x[0]))
-        return dates.splice(1)
-    }
-
-    function getTotalInfections() {
-        var infections = []
-        var i;
-        for (i = 1; i < data.length; i++) {
-            let curr = data[i]
-            curr = curr.slice(1)
-            let currSum = curr.reduce((a,b) => parseInt(a) + parseInt(b), 0)
-            infections.push(currSum)
-        }
-        return infections
-    }
-
-    function getTotalCumulativeInfections() {
-        let total = getTotalInfections()
-        const cumulativeSum = (sum => value => sum += value)(0);
-        return total.map(cumulativeSum)
-    }
-
-    function cumulative(array) {
-        const cumulativeSum = (sum => value => sum += parseInt(value))(0);
-        return array.map(cumulativeSum)
-    }
-
-    function getMunicipalities() {
-        if (string) {
-            let municips = []
-            let temp = data[0].slice(0)
-            temp = temp.splice(1)
-            temp.map((e,index) => municips.push({value: index,label: e}))
-            return municips
-        }
-    }
-
-    function getMunicipStats() {
-        if (string) {
-            let tmp = data.slice()
-            tmp = tmp.splice(1)
-
-            let totalStat = tmp[0].map((col, i) => tmp.map(row => row[i]));
-            totalStat.shift()
-            return totalStat
-        }
-    }
-
-    function getTotalForMunicips() {
-        if (string) {
-            let last = municipStats.map(x => lastOf(cumulative(x)))
-            return last
-        }
-    }
-
-    function municipVals(muns,stats) {
-        if (string) {
-            let municipSorted = []
-
-            let munis = muns
-            let muniStats = stats
-
-            munis.map((x,index) => municipSorted.push([x,muniStats[index]]))
-
-            let sortedList = municipSorted.sort((a,b) => {
-                return a[0]['label'] > b[0]['label']
-            })
-            
-            console.log(municipSorted)
-            return municipSorted
-        }
-    }
-
-    function lastOf(array) {
-        return array[array.length-1]
-    }
-
-    let dates = getDates()
-    let totalInfections = getTotalInfections()
-    let cumulativeInfections = getTotalCumulativeInfections()
-
-
-    //let municipalities = msvals.map(e => e[0])
-    //let municipStats = msvals.map(e => e[1])
-
-    let municipalities = getMunicipalities()
-    let municipStats = getMunicipStats()
-
-    /* let msvals = municipVals(municipalities2,municipStats2)
-
-    let municipalities = msvals.map(e => e[0])
-    let municipStats = msvals.map(e => e[1]) 
-
-
-    let currenctForMunicips = getTotalForMunicips()
-
-    function handleChange(e) {
-        setMunicip(e)
-    } */
-
-    
-
-    
 
     return (
         <div className="content">
@@ -298,36 +171,31 @@ export const Content = () => {
             <br/>
             <br/>
             <h3>KOMMUNEOVERSIKT</h3>
-
-            
             <br/>
             <Select
                 className="basic-single"
                 classNamePrefix="select"
-                defaultValue={municips[0]}
+                defaultValue={municips.filter(m => m["value"] === "Oslo")}
                 isDisabled={false}
                 isLoading={false}
                 isClearable={false}
                 isRtl={false}
-                isSearchable={false}
+                isSearchable={true}
                 name="color"
                 options={municips}
                 onChange={e => handleChange(e.value)}
             />
-
-            {/*
             <br/>
-            <TotalBox today={lastOf(municipStats[municip])} total={lastOf(cumulative(municipStats[municip]))} />
-            <br/>
-
-            <TotalGraph x={dates} total={cumulative(municipStats[municip])} daily={municipStats[municip]} />
+            <TotalBox today={lastOf(municipDaily)} total={lastOf(municipCumulative)} />
+            <br/> 
+            <TotalGraph x={dates} total={municipCumulative} daily={municipDaily} />
             <br/>
             <br/>
             <h3>FORDELING AV SMITTEDE</h3>
             <br/>
-            <Municipality x={municipalities.map(e => e.label)} y={getTotalForMunicips()} />
+            <Municipality x={municipTotalName} y={municipTotalCount} />
             <br/>
-            <br/> */}
+            <br/>
         </div>
     )
 }

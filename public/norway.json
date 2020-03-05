@@ -178,7 +178,7 @@
             "municips": [
                 {
                     "municip": "Oslo",
-                    "count": 1
+                    "count": 3
                 },
                 {
                     "municip": "Bergen",
@@ -198,6 +198,30 @@
                 },
                 {
                     "municip": "Ålesund",
+                    "count": 1
+                },
+                {
+                    "municip": "Stavanger",
+                    "count": 1
+                },
+                {
+                    "municip": "Sandnes",
+                    "count": 1
+                },
+                {
+                    "municip": "Ukjent",
+                    "count": 1
+                },
+                {
+                    "municip": "Fredrikstad",
+                    "count": 1
+                },
+                {
+                    "municip": "Trondheim",
+                    "count": 5
+                },
+                {
+                    "municip": "Skien",
                     "count": 1
                 }
             ]
