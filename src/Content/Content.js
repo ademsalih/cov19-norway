@@ -13,7 +13,16 @@ import { getJsonData } from '../api/getCSV.js'
 export const Content = () => {
     
     const [loading,setLoading] = useState(true);
-    const [dates,setDates] = useState(null);
+    const [dates,setDates] = useState([]);
+
+    const [daily, setDaily] = useState([]);
+    const [cumulative, setCumulative] = useState([]);
+
+    const [today, setToday] = useState(0);
+    const [total, setTotal] = useState(0);
+
+    const [municips, setMunicips] = useState([]);
+    const [municip, setMunicip] = useState(0)
 
     React.useEffect(() => {
         getJsonData().then(result => {
@@ -25,17 +34,44 @@ export const Content = () => {
 
             let entries = result["entries"]
 
+            let daily = []
+
+            let municipData = []
+
             let values = entries.map(x => {
-                x["cities"].map(y => {
-                    console.log(y)
+                let day = []
+
+                x["municips"].map(municip => {
+                    day.push(municip["count"])
+
+
                 })
+
+            
+                let daySum = day.reduce((a, b) => a + b, 0)
+
+                daily.push(daySum)
             })
 
-            console.log(values)
+            let cumulated = cumulate(daily)
+
+            setDaily(daily)
+
+            
+
+            setCumulative(cumulated)
+
+            setToday(lastOf(daily))
+            setTotal(lastOf(cumulated))
+
+
+
 
             setLoading(false)
         })
     }, [])
+
+    /*---------------------------- Helper Methods ------------------------------*/
 
     function datesBetween(start,end) {
         let dates = []
@@ -51,19 +87,41 @@ export const Content = () => {
     function formatDates(dateArray) {
         return dateArray.map(d => {
             let n = new Date(d)
-            return `${n.getDate()}-${n.getMonth()+1}-${n.getFullYear()}`
+            let day = (n.getDate()).toString().padStart(2, "0")
+            let month = (n.getMonth()+1).toString().padStart(2, "0")
+            let year = n.getFullYear().toString().substr(2,2)
+            return `${day}.${month}.${year}`
         })
     }
+
+    function cumulate(array) {
+        const cumulativeSum = (sum => value => sum += parseInt(value))(0);
+        return array.map(cumulativeSum)
+    }
+
+    function lastOf(array) {
+        return array[array.length-1]
+    }
+
+    /*---------------------------- Handler Methods ------------------------------*/
+
+    function handleChange(e) {
+        setMunicips(e)
+    }
+
+
 
 
     if (loading) {
         return <Spinner />
     }
 
+    
 
-    ///////////////////////////////////////////////////////////////////////////
 
-    /* const [string, setString] = useState("")
+    /////////////////////////////// OLD CODE ////////////////////////////////////
+    /*
+    const [string, setString] = useState("")
     const [municip, setMunicip] = useState(0)
 
     React.useEffect(() => {
@@ -88,7 +146,7 @@ export const Content = () => {
         tempData.map((row) => {
             
             var newEntry = {}
-            var cities = {}
+            var cities = []
 
             row.map((x,index) => {
 
@@ -99,23 +157,33 @@ export const Content = () => {
                     
                     if (x > 0) {
                         var by = ms[index]
-                        cities[`${by}`] = parseInt(x)
+
+                        var antall = parseInt(x)
+
+                        cities.push({"municip": by,"count":antall})
+                        
                     }
                 }
 
             })
 
-            newEntry["cities"] = cities
+            newEntry["municips"] = cities
 
             dict["entries"].push(newEntry)
         })
 
         var stringAgain = JSON.stringify(dict,null,4);
-        //console.log(stringAgain)
+        console.log(stringAgain)
     }
 
-    let jsonData2 = csvToJSON()
 
+
+    
+
+    
+
+    let jsonData2 = csvToJSON()
+    
     function getDates() {
         let dates = []
         data.map(x => dates.push(x[0]))
@@ -224,32 +292,30 @@ export const Content = () => {
 
     return (
         <div className="content">
-        {/*
-            <h3>HELE NORGE</h3>
-             <br/>
-            <TotalBox total={lastOf(cumulativeInfections)} today={lastOf(totalInfections)} />
+            <TotalBox total={total} today={today} />
             <br/>
-            <TotalGraph x={dates} total={cumulativeInfections} daily={totalInfections} />
+            <TotalGraph x={dates} total={cumulative} daily={daily} />
+            <br/>
+            <br/>
+            <h3>KOMMUNEOVERSIKT</h3>
 
             
-            <br/>
-            <br/>
-            <br/>
-            <h3>KOMMUNE</h3>
             <br/>
             <Select
                 className="basic-single"
                 classNamePrefix="select"
-                defaultValue={municipalities[0]}
+                defaultValue={municips[0]}
                 isDisabled={false}
                 isLoading={false}
                 isClearable={false}
                 isRtl={false}
                 isSearchable={false}
                 name="color"
-                options={municipalities}
+                options={municips}
                 onChange={e => handleChange(e.value)}
             />
+
+            {/*
             <br/>
             <TotalBox today={lastOf(municipStats[municip])} total={lastOf(cumulative(municipStats[municip]))} />
             <br/>

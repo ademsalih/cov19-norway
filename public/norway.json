@@ -3,88 +3,203 @@
     "entries": [
         {
             "date": "25.02.20",
-            "cities": []
+            "municips": []
         },
         {
             "date": "26.02.20",
-            "cities": [
-                {"Tromsø": 1}
+            "municips": [
+                {
+                    "municip": "Tromsø",
+                    "count": 1
+                }
             ]
         },
         {
             "date": "27.02.20",
-            "cities": [
-                {"Oslo": 2},
-                {"Bærum": 1}
+            "municips": [
+                {
+                    "municip": "Oslo",
+                    "count": 2
+                },
+                {
+                    "municip": "Bærum",
+                    "count": 1
+                }
             ]
         },
         {
             "date": "28.02.20",
-            "cities": [
-                {"Oslo": 1},
-                {"Bergen": 1}
+            "municips": [
+                {
+                    "municip": "Oslo",
+                    "count": 1
+                },
+                {
+                    "municip": "Bergen",
+                    "count": 1
+                }
             ]
         },
         {
             "date": "29.02.20",
-            "cities": [
-                {"Oslo": 1},
-                {"Bergen": 4}
+            "municips": [
+                {
+                    "municip": "Oslo",
+                    "count": 1
+                },
+                {
+                    "municip": "Bergen",
+                    "count": 4
+                }
             ]
         },
         {
             "date": "01.03.20",
-            "cities": [
-                {"Oslo": 3},
-                {"Bergen": 1},
-                {"Enebakk": 3},
-                {"Nes": 1}
+            "municips": [
+                {
+                    "municip": "Oslo",
+                    "count": 3
+                },
+                {
+                    "municip": "Bergen",
+                    "count": 1
+                },
+                {
+                    "municip": "Enebakk",
+                    "count": 3
+                },
+                {
+                    "municip": "Nes",
+                    "count": 1
+                }
             ]
         },
         {
             "date": "02.03.20",
-            "cities": [
-                {"Bergen": 1},
-                {"Stavanger": 1},
-                {"Kristiansand": 2},
-                {"Øygarden": 2}
+            "municips": [
+                {
+                    "municip": "Bergen",
+                    "count": 1
+                },
+                {
+                    "municip": "Stavanger",
+                    "count": 1
+                },
+                {
+                    "municip": "Kristiansand",
+                    "count": 2
+                },
+                {
+                    "municip": "Øygarden",
+                    "count": 2
+                }
             ]
         },
         {
             "date": "03.03.20",
-            "cities": [
-                {"Oslo": 1},
-                {"Bergen": 3},
-                {"Tromsø": 1},
-                {"Kristiansand": 1},
-                {"Drammen": 2}
+            "municips": [
+                {
+                    "municip": "Oslo",
+                    "count": 1
+                },
+                {
+                    "municip": "Bergen",
+                    "count": 3
+                },
+                {
+                    "municip": "Tromsø",
+                    "count": 1
+                },
+                {
+                    "municip": "Kristiansand",
+                    "count": 1
+                },
+                {
+                    "municip": "Drammen",
+                    "count": 2
+                }
             ]
         },
         {
             "date": "04.03.20",
-            "cities": [
-                {"Oslo": 7},
-                {"Bergen": 5},
-                {"Trondheim": 1},
-                {"Haugesund": 1},
-                {"Stavanger": 1},
-                {"Drammen": 6},
-                {"Klepp": 1},
-                {"Ukjent": 1}
+            "municips": [
+                {
+                    "municip": "Oslo",
+                    "count": 7
+                },
+                {
+                    "municip": "Bergen",
+                    "count": 5
+                },
+                {
+                    "municip": "Bærum",
+                    "count": 3
+                },
+                {
+                    "municip": "Trondheim",
+                    "count": 1
+                },
+                {
+                    "municip": "Molde",
+                    "count": 1
+                },
+                {
+                    "municip": "Haugesund",
+                    "count": 1
+                },
+                {
+                    "municip": "Stavanger",
+                    "count": 1
+                },
+                {
+                    "municip": "Lier",
+                    "count": 1
+                },
+                {
+                    "municip": "Asker",
+                    "count": 1
+                },
+                {
+                    "municip": "Drammen",
+                    "count": 6
+                },
+                {
+                    "municip": "Klepp",
+                    "count": 1
+                },
+                {
+                    "municip": "Nord-Fron",
+                    "count": 3
+                }
             ]
         },
         {
             "date": "05.03.20",
-            "cities": [
+            "municips": [
                 {
-                    "city": "Bergen",
-                	"cases": 5
-                    
+                    "municip": "Oslo",
+                    "count": 1
                 },
-                {"Molde": 1},
-                {"Drammen": 1},
-                {"Nord-Fron": 3},
-                {"Frosta": 1}
+                {
+                    "municip": "Bergen",
+                    "count": 5
+                },
+                {
+                    "municip": "Drammen",
+                    "count": 1
+                },
+                {
+                    "municip": "Frosta",
+                    "count": 1
+                },
+                {
+                    "municip": "Sel",
+                    "count": 1
+                },
+                {
+                    "municip": "Ålesund",
+                    "count": 1
+                }
             ]
         }
     ]
