@@ -3,85 +3,89 @@
     "entries": [
         {
             "date": "25.02.20",
-            "cities": {}
+            "cities": []
         },
         {
             "date": "26.02.20",
-            "cities": {
-                "Tromsø": 1
-            }
+            "cities": [
+                {"Tromsø": 1}
+            ]
         },
         {
             "date": "27.02.20",
-            "cities": {
-                "Oslo": 2,
-                "Bærum": 1
-            }
+            "cities": [
+                {"Oslo": 2},
+                {"Bærum": 1}
+            ]
         },
         {
             "date": "28.02.20",
-            "cities": {
-                "Oslo": 1,
-                "Bergen": 1
-            }
+            "cities": [
+                {"Oslo": 1},
+                {"Bergen": 1}
+            ]
         },
         {
             "date": "29.02.20",
-            "cities": {
-                "Oslo": 1,
-                "Bergen": 4
-            }
+            "cities": [
+                {"Oslo": 1},
+                {"Bergen": 4}
+            ]
         },
         {
             "date": "01.03.20",
-            "cities": {
-                "Oslo": 3,
-                "Bergen": 1,
-                "Enebakk": 3,
-                "Nes": 1
-            }
+            "cities": [
+                {"Oslo": 3},
+                {"Bergen": 1},
+                {"Enebakk": 3},
+                {"Nes": 1}
+            ]
         },
         {
             "date": "02.03.20",
-            "cities": {
-                "Bergen": 1,
-                "Stavanger": 1,
-                "Kristiansand": 2,
-                "Øygarden": 2
-            }
+            "cities": [
+                {"Bergen": 1},
+                {"Stavanger": 1},
+                {"Kristiansand": 2},
+                {"Øygarden": 2}
+            ]
         },
         {
             "date": "03.03.20",
-            "cities": {
-                "Oslo": 1,
-                "Bergen": 3,
-                "Tromsø": 1,
-                "Kristiansand": 1,
-                "Drammen": 2
-            }
+            "cities": [
+                {"Oslo": 1},
+                {"Bergen": 3},
+                {"Tromsø": 1},
+                {"Kristiansand": 1},
+                {"Drammen": 2}
+            ]
         },
         {
             "date": "04.03.20",
-            "cities": {
-                "Oslo": 7,
-                "Bergen": 5,
-                "Trondheim": 1,
-                "Haugesund": 1,
-                "Stavanger": 1,
-                "Drammen": 6,
-                "Klepp": 1,
-                "Ukjent": 1
-            }
+            "cities": [
+                {"Oslo": 7},
+                {"Bergen": 5},
+                {"Trondheim": 1},
+                {"Haugesund": 1},
+                {"Stavanger": 1},
+                {"Drammen": 6},
+                {"Klepp": 1},
+                {"Ukjent": 1}
+            ]
         },
         {
             "date": "05.03.20",
-            "cities": {
-                "Bergen": 5,
-                "Molde": 1,
-                "Drammen": 1,
-                "Nord-Fron": 3,
-                "Frosta": 1
-            }
+            "cities": [
+                {
+                    "city": "Bergen",
+                	"cases": 5
+                    
+                },
+                {"Molde": 1},
+                {"Drammen": 1},
+                {"Nord-Fron": 3},
+                {"Frosta": 1}
+            ]
         }
     ]
 }

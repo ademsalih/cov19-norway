@@ -6,7 +6,7 @@ export async function get() {
     return data
 }
 
-export async function getJSON() {
+export async function getJsonData() {
     const reponse = await fetch(`${process.env.PUBLIC_URL}/norway.json`);
     const data = await reponse.json();
 

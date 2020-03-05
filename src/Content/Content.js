@@ -8,20 +8,63 @@ import Select from 'react-select'
 import { Municipality } from '../Municipality'
 import './style.css'
 
-import { jsonData } from '../api/norway.json'
+import { getJsonData } from '../api/getCSV.js'
 
 export const Content = () => {
-    const [string, setString] = useState("")
-    const [municip, setMunicip] = useState(0)
-
-    //////////////////////////////////////////////////////////////////////////
-
     
+    const [loading,setLoading] = useState(true);
+    const [dates,setDates] = useState(null);
+
+    React.useEffect(() => {
+        getJsonData().then(result => {
+            
+            let startDate = new Date(result["startDate"])
+            let days = datesBetween(startDate, new Date())
+            let formattedDays = formatDates(days)
+            setDates(formattedDays)
+
+            let entries = result["entries"]
+
+            let values = entries.map(x => {
+                x["cities"].map(y => {
+                    console.log(y)
+                })
+            })
+
+            console.log(values)
+
+            setLoading(false)
+        })
+    }, [])
+
+    function datesBetween(start,end) {
+        let dates = []
+        let curr = start
+        
+        while (curr < end) {
+            dates.push(curr)
+            curr = new Date(curr.getFullYear(),curr.getMonth(),curr.getDate()+1);
+        }
+        return dates
+     }
+
+    function formatDates(dateArray) {
+        return dateArray.map(d => {
+            let n = new Date(d)
+            return `${n.getDate()}-${n.getMonth()+1}-${n.getFullYear()}`
+        })
+    }
 
 
+    if (loading) {
+        return <Spinner />
+    }
 
 
     ///////////////////////////////////////////////////////////////////////////
+
+    /* const [string, setString] = useState("")
+    const [municip, setMunicip] = useState(0)
 
     React.useEffect(() => {
           get().then(result => setString(result))
@@ -71,7 +114,7 @@ export const Content = () => {
         //console.log(stringAgain)
     }
 
-    let jsonData = csvToJSON()
+    let jsonData2 = csvToJSON()
 
     function getDates() {
         let dates = []
@@ -166,26 +209,29 @@ export const Content = () => {
     /* let msvals = municipVals(municipalities2,municipStats2)
 
     let municipalities = msvals.map(e => e[0])
-    let municipStats = msvals.map(e => e[1]) */
+    let municipStats = msvals.map(e => e[1]) 
 
 
     let currenctForMunicips = getTotalForMunicips()
 
-    if (!string) {
-        return <Spinner />
-    }
-
     function handleChange(e) {
         setMunicip(e)
-    }
+    } */
+
+    
+
+    
 
     return (
         <div className="content">
+        {/*
             <h3>HELE NORGE</h3>
-            <br/>
+             <br/>
             <TotalBox total={lastOf(cumulativeInfections)} today={lastOf(totalInfections)} />
             <br/>
             <TotalGraph x={dates} total={cumulativeInfections} daily={totalInfections} />
+
+            
             <br/>
             <br/>
             <br/>
@@ -215,7 +261,7 @@ export const Content = () => {
             <br/>
             <Municipality x={municipalities.map(e => e.label)} y={getTotalForMunicips()} />
             <br/>
-            <br/>
+            <br/> */}
         </div>
     )
 }
