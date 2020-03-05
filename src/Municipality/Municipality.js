@@ -43,7 +43,7 @@ export const Municipality = ({x,y}) => {
                 height={null}
                 width={null}
 				options={{
-					aspectRatio: 1
+					aspectRatio: 0.8
 				}}
             />
         </div>
