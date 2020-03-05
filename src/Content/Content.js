@@ -8,9 +8,20 @@ import Select from 'react-select'
 import { Municipality } from '../Municipality'
 import './style.css'
 
+import { jsonData } from '../api/norway.json'
+
 export const Content = () => {
     const [string, setString] = useState("")
     const [municip, setMunicip] = useState(0)
+
+    //////////////////////////////////////////////////////////////////////////
+
+    
+
+
+
+
+    ///////////////////////////////////////////////////////////////////////////
 
     React.useEffect(() => {
           get().then(result => setString(result))
@@ -18,6 +29,49 @@ export const Content = () => {
     
     var results = readString(string)
     let data = results['data']
+
+    function csvToJSON() {
+        let dict = {}
+
+        dict["startDate"] = "2020-02-25"
+
+        dict["entries"] = []
+
+        let tempData = data.slice()
+        tempData = tempData.splice(1)
+
+        let ms = data[0]
+
+        tempData.map((row) => {
+            
+            var newEntry = {}
+            var cities = {}
+
+            row.map((x,index) => {
+
+                if (index === 0) {
+                    newEntry = {}
+                    newEntry["date"] = row[0]
+                } else {
+                    
+                    if (x > 0) {
+                        var by = ms[index]
+                        cities[`${by}`] = parseInt(x)
+                    }
+                }
+
+            })
+
+            newEntry["cities"] = cities
+
+            dict["entries"].push(newEntry)
+        })
+
+        var stringAgain = JSON.stringify(dict,null,4);
+        //console.log(stringAgain)
+    }
+
+    let jsonData = csvToJSON()
 
     function getDates() {
         let dates = []
