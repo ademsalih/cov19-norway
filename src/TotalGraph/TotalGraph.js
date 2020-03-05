@@ -2,7 +2,7 @@ import React from "react"
 import { Line } from "react-chartjs-2"
 import "./style.css"
 
-export const TotalGraph = ({x,total,daily}) => {
+export const TotalGraph = ({x,total,daily,color1,color2}) => {
 	const data = {
 		labels: x,
 		datasets: [
@@ -11,17 +11,17 @@ export const TotalGraph = ({x,total,daily}) => {
 				fill: false,
 				lineTension: 0.1,
 				backgroundColor: "rgba(75,192,192,0.4)",
-				borderColor: "rgba(202,15,27,1)",
+				borderColor: color1,
 				borderCapStyle: "butt",
 				borderDash: [],
 				borderDashOffset: 0.0,
 				borderJoinStyle: "miter",
-				pointBorderColor: "rgba(202,15,27,1)",
-				pointBackgroundColor: "#CA0F1B",
+				pointBorderColor: color1,
+				pointBackgroundColor: color1,
 				pointBorderWidth: 1,
 				pointHoverRadius: 5,
-				pointHoverBackgroundColor: "rgba(202,15,27,1)",
-				pointHoverBorderColor: "rgba(202,15,27,1)",
+				pointHoverBackgroundColor: color1,
+				pointHoverBorderColor: color1,
 				pointHoverBorderWidth: 2,
 				pointRadius: 3,
 				pointHitRadius: 10,
@@ -31,18 +31,18 @@ export const TotalGraph = ({x,total,daily}) => {
 				label: "Nye",
 				fill: false,
 				lineTension: 0.1,
-				backgroundColor: "rgba(231,128,0,1)",
-				borderColor: "rgba(231,128,0,1)",
+				backgroundColor: color2,
+				borderColor: color2,
 				borderCapStyle: "butt",
 				borderDash: [],
 				borderDashOffset: 0.0,
 				borderJoinStyle: "miter",
-				pointBorderColor: "rgba(231,128,0,1)",
-				pointBackgroundColor: "#E77F00",
+				pointBorderColor: color2,
+				pointBackgroundColor: color2,
 				pointBorderWidth: 1,
 				pointHoverRadius: 5,
-				pointHoverBackgroundColor: "rgba(231,128,0,1)",
-				pointHoverBorderColor: "rgba(231,128,0,1)",
+				pointHoverBackgroundColor: color2,
+				pointHoverBorderColor: color2,
 				pointHoverBorderWidth: 2,
 				pointRadius: 3,
 				pointHitRadius: 10,
@@ -58,7 +58,7 @@ export const TotalGraph = ({x,total,daily}) => {
 				height={null}
 				width={null}
 				options={{
-					aspectRatio: 1.9
+					aspectRatio: 1.5
 				}}
 			/>
 		</div>

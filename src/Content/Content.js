@@ -173,12 +173,11 @@ export const Content = () => {
         <div className="content">
             <TotalBox total={total} today={today} />
             <br/>
-            <TotalGraph x={dates} total={cumulative} daily={daily} />
+            <TotalGraph x={dates} total={cumulative} daily={daily} color1={"rgba(202,15,27,1)"} color2={"rgba(231,128,0,1)"} />
             <br/>
             <br/>
             <h3>KOMMUNEOVERSIKT</h3>
             <br/>
-
             <Select
                 className="basic-single"
                 classNamePrefix="select"
@@ -196,7 +195,7 @@ export const Content = () => {
             <br/>
             <TotalBox today={lastOf(municipDaily)} total={lastOf(municipCumulative)} />
             <br/> 
-            <TotalGraph x={dates} total={municipCumulative} daily={municipDaily} />
+            <TotalGraph x={dates} total={municipCumulative} daily={municipDaily} color1={"rgba(21,177,48,1)"} color2={"rgba(231,128,0,1)"} />
             <br/>
             <br/>
             <h3>FORDELING AV SMITTEDE</h3>
