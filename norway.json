@@ -231,6 +231,10 @@
                 {
                     "municip": "Bærum",
                     "count": 1
+                },
+                {
+                    "municip": "Asker",
+                    "count": 2
                 }
             ]
         },{
@@ -247,11 +251,6 @@
                 {
                     "municip": "Frosta",
                     "count": 4
-                }
-                ,
-                {
-                    "municip": "Asker",
-                    "count": 2
                 }
             ]
         }
