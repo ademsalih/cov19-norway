@@ -1,0 +1,1 @@
+export { MunicipToday } from './MunicipToday'

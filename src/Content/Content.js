@@ -5,6 +5,7 @@ import { getJsonData } from '../api/getCSV.js'
 import { TotalBox } from '../TotalBox'
 import Select from 'react-select'
 import { Municipality } from '../Municipality'
+import { MunicipToday } from '../MunicipToday'
 import './style.css'
 
 export const Content = () => {
@@ -28,6 +29,8 @@ export const Content = () => {
     const [municipTotalName, setMunicipTotalName] = useState([]);
     const [municipTotalCount, setMunicipTotalCount] = useState([]);
 
+    const [municipsToday, setMunicipsToday] = useState([]);
+
     React.useEffect(() => {
         getJsonData().then(result => {
             
@@ -37,6 +40,8 @@ export const Content = () => {
             setDates(formattedDays)
 
             let entries = result["entries"]
+
+            setMunicipsToday(lastOf(entries)["municips"])
 
             let daily = new Array(formattedDays.length).fill(0)
 
@@ -117,6 +122,8 @@ export const Content = () => {
             setMunicipTotalName(totalForMunicips.map(x => x["municip"]))
             setMunicipTotalCount(totalForMunicips.map(x => x["total"]))
 
+            
+
             setLoading(false)
         })
     }, [])
@@ -172,6 +179,17 @@ export const Content = () => {
             <br/>
             <TotalGraph x={dates} total={cumulative} daily={daily} color1={"rgba(202,15,27,1)"} color2={"rgba(231,128,0,1)"} />
             <br/>
+
+            {municipsToday.length > 0 ? (
+                <>
+                    <br/>
+                    <h3>NYE TILFELLER I DAG</h3>
+                    <br/>
+                    <MunicipToday stats={municipsToday} />
+                    <br/>
+                </>
+            ): null}
+
             <br/>
             <h3>KOMMUNEOVERSIKT</h3>
             <br/>

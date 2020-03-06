@@ -245,10 +245,6 @@
             "date": "06.03.20",
             "municips": [
                 {
-                    "municip": "Ukjent",
-                    "count": 0
-                },
-                {
                     "municip": "Levanger",
                     "count": 1
                 },
@@ -263,6 +259,10 @@
                 {
                     "municip": "Tromsø",
                     "count": 2
+                },
+                {
+                    "municip": "Oslo",
+                    "count": 1
                 }
             ]
         }
