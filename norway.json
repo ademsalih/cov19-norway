@@ -262,10 +262,14 @@
                 },
                 {
                     "municip": "Oslo",
-                    "count": 1
+                    "count": 5
                 },
                 {
                     "municip": "Gjesdal",
+                    "count": 2
+                },
+                {
+                    "municip": "Stavanger",
                     "count": 2
                 }
             ]
