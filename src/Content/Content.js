@@ -38,27 +38,26 @@ export const Content = () => {
 
             let entries = result["entries"]
 
-            let daily = []
+            let daily = new Array(formattedDays.length).fill(0)
 
             let municipData = []
 
-            entries.map(x => {
+            entries.map((x,index) => {
                 let day = []
 
                 x["municips"].map(m => {
                     day.push(m["count"])
                 })
 
-            
                 let daySum = day.reduce((a, b) => a + b, 0)
 
-                daily.push(daySum)
+                daily[index] = daySum
             })
 
             let cumulated = cumulate(daily)
 
             setDaily(daily)
-            setCumulative(cumulate(daily))
+            setCumulative(cumulated)
 
             setToday(lastOf(daily))
             setTotal(lastOf(cumulated))
@@ -75,9 +74,7 @@ export const Content = () => {
                         let newMun = {}
 
                         newMun["municip"] = currMun
-                        newMun["daily"] = new Array(daily.length).fill(0);
-
-                        
+                        newMun["daily"] = new Array(formattedDays.length).fill(0)
 
                         municipData.push(newMun)
                     }

@@ -202,7 +202,7 @@
                 },
                 {
                     "municip": "Stavanger",
-                    "count": 1
+                    "count": 3
                 },
                 {
                     "municip": "Sandnes",
@@ -227,8 +227,45 @@
                 {
                     "municip": "Finnsnes",
                     "count": 1
+                },
+                {
+                    "municip": "Asker",
+                    "count": 2
+                },
+                {
+                    "municip": "Kristiansand",
+                    "count": 4
+                },
+                {
+                    "municip": "Bærum",
+                    "count": 2
+                }
+            ]
+        },{
+            "date": "06.03.20",
+            "municips": [
+                {
+                    "municip": "Ukjent",
+                    "count": 0
+                },
+                {
+                    "municip": "Levanger",
+                    "count": 1
+                },
+                {
+                    "municip": "Frosta",
+                    "count": 4
+                },
+                {
+                    "municip": "Tysvar",
+                    "count": 1
+                },
+                {
+                    "municip": "Tromsø",
+                    "count": 2
                 }
             ]
         }
+        
     ]
 }
