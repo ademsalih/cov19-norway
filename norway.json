@@ -259,6 +259,14 @@
                 {
                     "municip": "Bærum",
                     "count": 1
+                },
+                {
+                    "municip": "Tysvar",
+                    "count": 1
+                },
+                {
+                    "municip": "Tromsø",
+                    "count": 2
                 }
             ]
         }
