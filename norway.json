@@ -253,7 +253,7 @@
                     "count": 4
                 },
                 {
-                    "municip": "Tysvar",
+                    "municip": "Tysvær",
                     "count": 1
                 },
                 {
@@ -263,6 +263,10 @@
                 {
                     "municip": "Oslo",
                     "count": 1
+                },
+                {
+                    "municip": "Gjesdal",
+                    "count": 2
                 }
             ]
         }
