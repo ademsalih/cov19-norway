@@ -271,6 +271,18 @@
                 {
                     "municip": "Stavanger",
                     "count": 2
+                },
+                {
+                    "municip": "Trondheim",
+                    "count": 2
+                },
+                {
+                    "municip": "Bergen",
+                    "count": 1
+                },
+                {
+                    "municip": "Malvik",
+                    "count": 2
                 }
             ]
         }
