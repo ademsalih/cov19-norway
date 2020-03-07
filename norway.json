@@ -342,12 +342,12 @@
                     "count": 2
                 },
                 {
-                    "municip": "Ukjent",
-                    "count": 7
-                },
-                {
                     "municip": "Asker",
                     "count": 1
+                },
+                {
+                    "municip": "Ukjent",
+                    "count": 7
                 }
             ]
         }
