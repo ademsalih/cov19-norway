@@ -239,6 +239,10 @@
                 {
                     "municip": "Bærum",
                     "count": 2
+                },
+                {
+                    "municip": "Vindafjord",
+                    "count": 1
                 }
             ]
         },{
@@ -287,6 +291,18 @@
                 {
                     "municip": "Hamar",
                     "count": 2
+                },
+                {
+                    "municip": "Asker",
+                    "count": 1
+                },
+                {
+                    "municip": "Gjesdal",
+                    "count": 2
+                },
+                {
+                    "municip": "Sel",
+                    "count": 4
                 }
             ]
         },
