@@ -1,4 +1,5 @@
 import React from "react"
+import logo from './corona.png';
 import "./style.css"
 
 export const Header = () => {

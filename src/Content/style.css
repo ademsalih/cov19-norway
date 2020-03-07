@@ -4,3 +4,10 @@
     padding: 0.7em;
     text-align: left;
 }
+
+.madeByText {
+    color: rgb(206, 206, 206);
+    text-align: center;
+    font-size: 0.8em;
+    margin:0;
+}

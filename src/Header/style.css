@@ -1,7 +1,9 @@
 .header {
     background-color: rgb(255,217,62);
-    padding: 0.8em;
-    margin-bottom: 0.8em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .heading {
@@ -9,6 +11,11 @@
 }
 
 h2 {
-    margin: 0
+    margin: 0.5em
+}
+
+.bannerLogo {
+    width: 1.8em;
+    height: 1.8em;
 }
   

@@ -212,6 +212,18 @@ export const Content = () => {
                 name="color"
                 options={municips}
                 onChange={e => handleChange(e.value)}
+                theme={(theme) => ({
+                ...theme,
+                colors: {
+                ...theme.colors,
+                    text: 'black',
+                    primary: 'rgb(70,70,70)',
+                    primary25: 'rgb(255,217,62)',
+                    primary50: 'rgb(255,217,62)',
+                    primary75: 'pink',
+                    dangerLight: 'pink'
+                },
+                })}
             />
             <br/>
             <TotalBox today={lastOf(municipDaily)} total={lastOf(municipCumulative)} />
@@ -219,10 +231,13 @@ export const Content = () => {
             <TotalGraph x={dates} total={municipCumulative} daily={municipDaily} color1={"rgba(21,177,48,1)"} color2={"rgba(231,128,0,1)"} />
             <br/>
             <br/>
-            <h3>KOMMUNEOVERSIKT</h3>
+            <h3>FORDELING MELLOM KOMMUNER</h3>
             <br/>
             <Municipality x={municipTotalName} y={municipTotalCount} />
             <br/>
+            <br/>
+            <p className="madeByText">Kilde: FHI.no, NRK.no, VG.no og lokalaviser fra kommuner</p>
+            <p className="madeByText">Laget av Adem Salih</p>
             <br/>
         </div>
     )

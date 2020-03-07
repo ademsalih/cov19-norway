@@ -23,7 +23,7 @@ export const TotalGraph = ({x,total,daily,color1,color2}) => {
 				pointHoverBackgroundColor: color1,
 				pointHoverBorderColor: color1,
 				pointHoverBorderWidth: 2,
-				pointRadius: 3,
+				pointRadius: 2,
 				pointHitRadius: 10,
 				data: total
 			},
@@ -44,7 +44,7 @@ export const TotalGraph = ({x,total,daily,color1,color2}) => {
 				pointHoverBackgroundColor: color2,
 				pointHoverBorderColor: color2,
 				pointHoverBorderWidth: 2,
-				pointRadius: 3,
+				pointRadius: 2,
 				pointHitRadius: 10,
 				data: daily
 			}
