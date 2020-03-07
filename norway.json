@@ -2,11 +2,11 @@
     "startDate": "2020-02-25",
     "entries": [
         {
-            "date": "25.02.20",
+            "date": "2020-02-25",
             "municips": []
         },
         {
-            "date": "26.02.20",
+            "date": "2020-02-26",
             "municips": [
                 {
                     "municip": "Tromsø",
@@ -15,7 +15,7 @@
             ]
         },
         {
-            "date": "27.02.20",
+            "date": "2020-02-27",
             "municips": [
                 {
                     "municip": "Oslo",
@@ -28,7 +28,7 @@
             ]
         },
         {
-            "date": "28.02.20",
+            "date": "2020-02-28",
             "municips": [
                 {
                     "municip": "Oslo",
@@ -41,7 +41,7 @@
             ]
         },
         {
-            "date": "29.02.20",
+            "date": "2020-02-29",
             "municips": [
                 {
                     "municip": "Oslo",
@@ -54,7 +54,7 @@
             ]
         },
         {
-            "date": "01.03.20",
+            "date": "2020-03-01",
             "municips": [
                 {
                     "municip": "Oslo",
@@ -75,7 +75,7 @@
             ]
         },
         {
-            "date": "02.03.20",
+            "date": "2020-03-02",
             "municips": [
                 {
                     "municip": "Bergen",
@@ -96,7 +96,7 @@
             ]
         },
         {
-            "date": "03.03.20",
+            "date": "2020-03-03",
             "municips": [
                 {
                     "municip": "Oslo",
@@ -121,7 +121,7 @@
             ]
         },
         {
-            "date": "04.03.20",
+            "date": "2020-03-04",
             "municips": [
                 {
                     "municip": "Oslo",
@@ -174,7 +174,7 @@
             ]
         },
         {
-            "date": "05.03.20",
+            "date": "2020-03-05",
             "municips": [
                 {
                     "municip": "Oslo",
@@ -246,7 +246,7 @@
                 }
             ]
         },{
-            "date": "06.03.20",
+            "date": "2020-03-06",
             "municips": [
                 {
                     "municip": "Levanger",
@@ -315,7 +315,7 @@
             ]
         },
         {
-            "date": "07.03.20",
+            "date": "2020-03-07",
             "municips": [
                 {
                     "municip": "Frosta",
@@ -323,6 +323,5 @@
                 }
             ]
         }
-        
     ]
 }
