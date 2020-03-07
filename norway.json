@@ -336,6 +336,10 @@
                 {
                     "municip": "Ås",
                     "count": 2
+                },
+                {
+                    "municip": "Ukjent",
+                    "count": 9
                 }
             ]
         }
