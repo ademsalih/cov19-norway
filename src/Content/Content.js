@@ -41,6 +41,12 @@ export const Content = () => {
 
             let entries = result["entries"]
 
+            let municipsToday = lastOf(entries)["municips"]
+
+            /* municipsToday = municipsToday.sort((a,b) => {
+                return a["count"] < b["count"]
+            }) */
+
             setMunicipsToday(lastOf(entries)["municips"])
 
             let daily = new Array(formattedDays.length).fill(0)
@@ -180,7 +186,7 @@ export const Content = () => {
             <TotalGraph x={dates} total={cumulative} daily={daily} color1={"rgba(202,15,27,1)"} color2={"rgba(231,128,0,1)"} />
             <br/>
 
-            {municipsToday.length > 0 ? (
+            {lastOf(daily) > 0 ? (
                 <>
                     <br/>
                     <h3>NYE TILFELLER I DAG</h3>
@@ -191,7 +197,7 @@ export const Content = () => {
             ): null}
 
             <br/>
-            <h3>KOMMUNEOVERSIKT</h3>
+            <h3>KOMMUNEUTVIKLING</h3>
             <br/>
             <Select
                 className="basic-single"
@@ -202,7 +208,7 @@ export const Content = () => {
                 isLoading={false}
                 isClearable={false}
                 isRtl={false}
-                isSearchable={false}
+                isSearchable={true}
                 name="color"
                 options={municips}
                 onChange={e => handleChange(e.value)}
@@ -213,7 +219,7 @@ export const Content = () => {
             <TotalGraph x={dates} total={municipCumulative} daily={municipDaily} color1={"rgba(21,177,48,1)"} color2={"rgba(231,128,0,1)"} />
             <br/>
             <br/>
-            <h3>FORDELING AV SMITTEDE</h3>
+            <h3>KOMMUNEOVERSIKT</h3>
             <br/>
             <Municipality x={municipTotalName} y={municipTotalCount} />
             <br/>

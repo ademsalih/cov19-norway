@@ -1,9 +1,21 @@
 .municipTodayBox {
     background-color: white;
     padding: 1em;
-    width: 35%;
+    max-width: 100%;
 }
 
 table {
     width: 100%;
+}
+
+.colorCell {
+    background-color: rgb(247, 247, 247);
+}
+
+tr {
+    height: 2em;
+}
+
+td,th {
+    padding-left: 0.5em;
 }
