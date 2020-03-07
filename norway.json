@@ -346,8 +346,12 @@
                     "count": 1
                 },
                 {
+                    "municip": "Oslo",
+                    "count": 5
+                },
+                {
                     "municip": "Ukjent",
-                    "count": 7
+                    "count": 2
                 }
             ]
         }
