@@ -334,6 +334,10 @@
             "date": "2020-03-07",
             "municips": [
                 {
+                    "municip": "Kristiansand",
+                    "count": 2
+                },
+                {
                     "municip": "Frosta",
                     "count": 3
                 },
