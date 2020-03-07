@@ -251,6 +251,10 @@
                 {
                     "municip": "Vindafjord",
                     "count": 1
+                },
+                {
+                    "municip": "Senja",
+                    "count": 1
                 }
             ]
         },{
@@ -339,7 +343,11 @@
                 },
                 {
                     "municip": "Ukjent",
-                    "count": 9
+                    "count": 7
+                },
+                {
+                    "municip": "Asker",
+                    "count": 1
                 }
             ]
         }
