@@ -350,8 +350,12 @@
                     "count": 5
                 },
                 {
+                    "municip": "Stavanger",
+                    "count": 5
+                },
+                {
                     "municip": "Ukjent",
-                    "count": 2
+                    "count": 0
                 }
             ]
         }
