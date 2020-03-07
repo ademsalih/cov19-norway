@@ -170,6 +170,10 @@
                 {
                     "municip": "Nord-Fron",
                     "count": 3
+                },
+                {
+                    "municip": "Kristiansand",
+                    "count": 2
                 }
             ]
         },
@@ -234,7 +238,7 @@
                 },
                 {
                     "municip": "Kristiansand",
-                    "count": 4
+                    "count": 2
                 },
                 {
                     "municip": "Bærum",
