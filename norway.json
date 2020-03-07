@@ -117,6 +117,10 @@
                 {
                     "municip": "Drammen",
                     "count": 2
+                },
+                {
+                    "municip": "Ås",
+                    "count": 1
                 }
             ]
         },
@@ -174,10 +178,6 @@
                 {
                     "municip": "Kristiansand",
                     "count": 2
-                },
-                {
-                    "municip": "Ås",
-                    "count": 1
                 }
             ]
         },
