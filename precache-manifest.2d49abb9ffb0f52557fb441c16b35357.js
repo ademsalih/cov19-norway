@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5bc9ba41f9504bf8e737128caee6de1e",
+    "revision": "aebaebd51920e2718febbd4569812a5a",
     "url": "/cov19-norway/index.html"
   },
   {
-    "revision": "cc9499947bc27236cbc0",
-    "url": "/cov19-norway/static/css/main.feb81fa7.chunk.css"
+    "revision": "f169aed2a8de57f25b34",
+    "url": "/cov19-norway/static/css/main.4e9d7066.chunk.css"
   },
   {
     "revision": "45dda4261b6f3c90654d",
@@ -16,12 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cov19-norway/static/js/2.0fcc13a3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cc9499947bc27236cbc0",
-    "url": "/cov19-norway/static/js/main.a8b8d563.chunk.js"
+    "revision": "f169aed2a8de57f25b34",
+    "url": "/cov19-norway/static/js/main.ccaf38b4.chunk.js"
   },
   {
     "revision": "931cbb22c4ee141265a0",
     "url": "/cov19-norway/static/js/runtime-main.7cefeabc.js"
+  },
+  {
+    "revision": "5dcd47dc01dd7936af59c53fec61f3b8",
+    "url": "/cov19-norway/static/media/corona.5dcd47dc.png"
   },
   {
     "revision": "4649701475c380092871152cfdccca94",
