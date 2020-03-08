@@ -374,6 +374,10 @@
         {
             "date": "2020-03-08",
             "municips": [
+                {
+                    "municip": "Nesodden",
+                    "count": 1
+                }
             ]
         }
     ]
