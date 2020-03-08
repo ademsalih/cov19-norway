@@ -375,6 +375,10 @@
             "date": "2020-03-08",
             "municips": [
                 {
+                    "municip": "Bærum",
+                    "count": 1
+                },
+                {
                     "municip": "Nesodden",
                     "count": 1
                 }
