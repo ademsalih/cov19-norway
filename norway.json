@@ -393,6 +393,14 @@
                 {
                     "municip": "Oslo",
                     "count": 1
+                },
+                {
+                    "municip": "Stavanger",
+                    "count": 1
+                },
+                {
+                    "municip": "Ukjent",
+                    "count": 6
                 }
             ]
         }
