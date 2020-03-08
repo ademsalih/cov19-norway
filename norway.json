@@ -392,15 +392,11 @@
                 },
                 {
                     "municip": "Oslo",
-                    "count": 1
+                    "count": 7
                 },
                 {
                     "municip": "Stavanger",
                     "count": 1
-                },
-                {
-                    "municip": "Ukjent",
-                    "count": 6
                 }
             ]
         }
