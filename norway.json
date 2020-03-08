@@ -380,7 +380,7 @@
                 },
                 {
                     "municip": "Nesodden",
-                    "count": 1
+                    "count": 2
                 },
                 {
                     "municip": "Hadsel",
@@ -417,6 +417,10 @@
                 {
                     "municip": "Stavanger",
                     "count": 1
+                },
+                {
+                    "municip": "Kristiansand",
+                    "count": 2
                 }
             ]
         }
