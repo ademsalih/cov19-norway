@@ -206,7 +206,7 @@
                 },
                 {
                     "municip": "Stavanger",
-                    "count": 3
+                    "count": 2
                 },
                 {
                     "municip": "Sandnes",
@@ -413,6 +413,10 @@
                 {
                     "municip": "Sauda",
                     "count": 2
+                },
+                {
+                    "municip": "Stavanger",
+                    "count": 1
                 }
             ]
         }
