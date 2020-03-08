@@ -401,6 +401,14 @@
                 {
                     "municip": "Lørenskog",
                     "count": 3
+                },
+                {
+                    "municip": "Eidsvoll",
+                    "count": 1
+                },
+                {
+                    "municip": "Sandnes",
+                    "count": 2
                 }
             ]
         }
