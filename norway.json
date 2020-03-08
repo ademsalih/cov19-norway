@@ -364,7 +364,20 @@
                 {
                     "municip": "Bodø",
                     "count": 2
+                },
+                {
+                    "municip": "Nittedal",
+                    "count": 2
+                },
+                {
+                    "municip": "Lørenskog",
+                    "count": 3
                 }
+            ]
+        },
+        {
+            "date": "2020-03-08",
+            "municips": [
             ]
         }
     ]
