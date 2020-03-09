@@ -459,6 +459,10 @@
         {
           "municip" : "Nittedal",
           "count" : 1
+        },
+        {
+          "municip" : "Stavanger",
+          "count" : 8
         }
       ]
     }
