@@ -487,6 +487,10 @@
         {
           "municip" : "Sandnes",
           "count" : 9
+        },
+        {
+          "municip" : "Moss",
+          "count" : 1
         }
       ]
     }
