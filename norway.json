@@ -471,6 +471,14 @@
         {
           "municip" : "Sunnfjord",
           "count" : 1
+        },
+        {
+          "municip" : "Trondheim",
+          "count" : 1
+        },
+        {
+          "municip" : "Løten",
+          "count" : 1
         }
       ]
     }
