@@ -435,6 +435,10 @@
         {
           "municip" : "Steinkjer",
           "count" : 1
+        },
+        {
+          "municip" : "Lier",
+          "count" : 1
         }
       ]
     }
