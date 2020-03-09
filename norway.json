@@ -499,6 +499,10 @@
         {
           "municip" : "Bærum",
           "count" : 5
+        },
+        {
+          "municip" : "Gjøvik",
+          "count" : 1
         }
       ]
     }
