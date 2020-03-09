@@ -483,6 +483,10 @@
         {
           "municip" : "Sarpsborg",
           "count" : 1
+        },
+        {
+          "municip" : "Sandnes",
+          "count" : 9
         }
       ]
     }
