@@ -463,6 +463,10 @@
         {
           "municip" : "Stavanger",
           "count" : 8
+        },
+        {
+          "municip" : "Sel",
+          "count" : 3
         }
       ]
     }
