@@ -24,10 +24,6 @@
         {
           "municip" : "Bærum",
           "count" : 1
-        },
-        {
-          "municip" : "Kvinnherad",
-          "count" : 1
         }
       ]
     },
@@ -446,6 +442,14 @@
         },
         {
           "municip" : "Bamble",
+          "count" : 1
+        },
+        {
+          "municip" : "Kvinnherad",
+          "count" : 1
+        },
+        {
+          "municip" : "Time",
           "count" : 1
         }
       ]
