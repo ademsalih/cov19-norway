@@ -24,6 +24,10 @@
         {
           "municip" : "Bærum",
           "count" : 1
+        },
+        {
+          "municip" : "Kvinnherad",
+          "count" : 1
         }
       ]
     },
@@ -369,6 +373,10 @@
         {
           "municip" : "Lørenskog",
           "count" : 3
+        },
+        {
+          "municip" : "Trondheim",
+          "count" : 1
         }
       ]
     },
