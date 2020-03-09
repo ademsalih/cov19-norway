@@ -467,6 +467,10 @@
         {
           "municip" : "Bergen",
           "count" : 2
+        },
+        {
+          "municip" : "Sunnfjord",
+          "count" : 1
         }
       ]
     }
