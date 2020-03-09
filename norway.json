@@ -213,10 +213,6 @@
           "count" : 1
         },
         {
-          "municip" : "Ukjent",
-          "count" : 0
-        },
-        {
           "municip" : "Fredrikstad",
           "count" : 1
         },
@@ -328,6 +324,10 @@
         {
           "municip" : "Nord-Fron",
           "count" : 1
+        },
+        {
+          "municip" : "Bærum",
+          "count" : 3
         }
       ]
     },
@@ -414,10 +414,6 @@
         {
           "municip" : "Sauda",
           "count" : 2
-        },
-        {
-          "municip" : "Stavanger",
-          "count" : 1
         },
         {
           "municip" : "Kristiansand",
