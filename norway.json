@@ -491,6 +491,14 @@
         {
           "municip" : "Moss",
           "count" : 1
+        },
+        {
+          "municip" : "Asker",
+          "count" : 1
+        },
+        {
+          "municip" : "Bærum",
+          "count" : 1
         }
       ]
     }
