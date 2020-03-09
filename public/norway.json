@@ -1,371 +1,458 @@
 {
-    "startDate": "2020-02-25",
-    "entries": [
+  "startDate" : "2020-02-25",
+  "entries" : [
+    {
+      "date" : "2020-02-25",
+      "municips" : []
+    },
+    {
+      "date" : "2020-02-26",
+      "municips" : [
         {
-            "date": "2020-02-25",
-            "municips": []
-        },
-        {
-            "date": "2020-02-26",
-            "municips": [
-                {
-                    "municip": "Tromsø",
-                    "count": 1
-                }
-            ]
-        },
-        {
-            "date": "2020-02-27",
-            "municips": [
-                {
-                    "municip": "Oslo",
-                    "count": 2
-                },
-                {
-                    "municip": "Bærum",
-                    "count": 1
-                }
-            ]
-        },
-        {
-            "date": "2020-02-28",
-            "municips": [
-                {
-                    "municip": "Oslo",
-                    "count": 1
-                },
-                {
-                    "municip": "Bergen",
-                    "count": 1
-                }
-            ]
-        },
-        {
-            "date": "2020-02-29",
-            "municips": [
-                {
-                    "municip": "Oslo",
-                    "count": 1
-                },
-                {
-                    "municip": "Bergen",
-                    "count": 4
-                }
-            ]
-        },
-        {
-            "date": "2020-03-01",
-            "municips": [
-                {
-                    "municip": "Oslo",
-                    "count": 3
-                },
-                {
-                    "municip": "Bergen",
-                    "count": 1
-                },
-                {
-                    "municip": "Enebakk",
-                    "count": 3
-                },
-                {
-                    "municip": "Nes",
-                    "count": 1
-                }
-            ]
-        },
-        {
-            "date": "2020-03-02",
-            "municips": [
-                {
-                    "municip": "Bergen",
-                    "count": 1
-                },
-                {
-                    "municip": "Stavanger",
-                    "count": 1
-                },
-                {
-                    "municip": "Kristiansand",
-                    "count": 2
-                },
-                {
-                    "municip": "Øygarden",
-                    "count": 2
-                }
-            ]
-        },
-        {
-            "date": "2020-03-03",
-            "municips": [
-                {
-                    "municip": "Oslo",
-                    "count": 1
-                },
-                {
-                    "municip": "Bergen",
-                    "count": 3
-                },
-                {
-                    "municip": "Tromsø",
-                    "count": 1
-                },
-                {
-                    "municip": "Kristiansand",
-                    "count": 1
-                },
-                {
-                    "municip": "Drammen",
-                    "count": 2
-                },
-                {
-                    "municip": "Ås",
-                    "count": 1
-                }
-            ]
-        },
-        {
-            "date": "2020-03-04",
-            "municips": [
-                {
-                    "municip": "Oslo",
-                    "count": 7
-                },
-                {
-                    "municip": "Bergen",
-                    "count": 5
-                },
-                {
-                    "municip": "Bærum",
-                    "count": 3
-                },
-                {
-                    "municip": "Trondheim",
-                    "count": 1
-                },
-                {
-                    "municip": "Molde",
-                    "count": 1
-                },
-                {
-                    "municip": "Haugesund",
-                    "count": 1
-                },
-                {
-                    "municip": "Stavanger",
-                    "count": 1
-                },
-                {
-                    "municip": "Lier",
-                    "count": 1
-                },
-                {
-                    "municip": "Asker",
-                    "count": 1
-                },
-                {
-                    "municip": "Drammen",
-                    "count": 6
-                },
-                {
-                    "municip": "Klepp",
-                    "count": 1
-                },
-                {
-                    "municip": "Nord-Fron",
-                    "count": 3
-                },
-                {
-                    "municip": "Kristiansand",
-                    "count": 2
-                }
-            ]
-        },
-        {
-            "date": "2020-03-05",
-            "municips": [
-                {
-                    "municip": "Oslo",
-                    "count": 3
-                },
-                {
-                    "municip": "Bergen",
-                    "count": 5
-                },
-                {
-                    "municip": "Drammen",
-                    "count": 1
-                },
-                {
-                    "municip": "Frosta",
-                    "count": 1
-                },
-                {
-                    "municip": "Sel",
-                    "count": 2
-                },
-                {
-                    "municip": "Ålesund",
-                    "count": 1
-                },
-                {
-                    "municip": "Stavanger",
-                    "count": 3
-                },
-                {
-                    "municip": "Sandnes",
-                    "count": 1
-                },
-                {
-                    "municip": "Ukjent",
-                    "count": 0
-                },
-                {
-                    "municip": "Fredrikstad",
-                    "count": 1
-                },
-                {
-                    "municip": "Trondheim",
-                    "count": 5
-                },
-                {
-                    "municip": "Skien",
-                    "count": 1
-                },
-                {
-                    "municip": "Finnsnes",
-                    "count": 1
-                },
-                {
-                    "municip": "Asker",
-                    "count": 2
-                },
-                {
-                    "municip": "Kristiansand",
-                    "count": 2
-                },
-                {
-                    "municip": "Bærum",
-                    "count": 2
-                },
-                {
-                    "municip": "Vindafjord",
-                    "count": 1
-                },
-                {
-                    "municip": "Senja",
-                    "count": 1
-                },
-                {
-                    "municip": "Målselv",
-                    "count": 1
-                }
-            ]
-        },{
-            "date": "2020-03-06",
-            "municips": [
-                {
-                    "municip": "Levanger",
-                    "count": 1
-                },
-                {
-                    "municip": "Frosta",
-                    "count": 4
-                },
-                {
-                    "municip": "Tysvær",
-                    "count": 1
-                },
-                {
-                    "municip": "Tromsø",
-                    "count": 2
-                },
-                {
-                    "municip": "Oslo",
-                    "count": 5
-                },
-                {
-                    "municip": "Gjesdal",
-                    "count": 2
-                },
-                {
-                    "municip": "Stavanger",
-                    "count": 2
-                },
-                {
-                    "municip": "Trondheim",
-                    "count": 2
-                },
-                {
-                    "municip": "Bergen",
-                    "count": 1
-                },
-                {
-                    "municip": "Malvik",
-                    "count": 2
-                },
-                {
-                    "municip": "Hamar",
-                    "count": 2
-                },
-                {
-                    "municip": "Asker",
-                    "count": 1
-                },
-                {
-                    "municip": "Gjesdal",
-                    "count": 2
-                },
-                {
-                    "municip": "Sel",
-                    "count": 4
-                },
-                {
-                    "municip": "Ringebu",
-                    "count": 1
-                },
-                {
-                    "municip": "Øygarden",
-                    "count": 1
-                },
-                {
-                    "municip": "Nord-Fron",
-                    "count": 1
-                }
-            ]
-        },
-        {
-            "date": "2020-03-07",
-            "municips": [
-                {
-                    "municip": "Kristiansand",
-                    "count": 2
-                },
-                {
-                    "municip": "Frosta",
-                    "count": 3
-                },
-                {
-                    "municip": "Ås",
-                    "count": 2
-                },
-                {
-                    "municip": "Asker",
-                    "count": 1
-                },
-                {
-                    "municip": "Oslo",
-                    "count": 5
-                },
-                {
-                    "municip": "Stavanger",
-                    "count": 3
-                },
-                {
-                    "municip": "Bodø",
-                    "count": 2
-                }
-            ]
+          "municip" : "Tromsø",
+          "count" : 1
         }
-    ]
+      ]
+    },
+    {
+      "date" : "2020-02-27",
+      "municips" : [
+        {
+          "municip" : "Oslo",
+          "count" : 2
+        },
+        {
+          "municip" : "Bærum",
+          "count" : 1
+        }
+      ]
+    },
+    {
+      "date" : "2020-02-28",
+      "municips" : [
+        {
+          "municip" : "Oslo",
+          "count" : 1
+        },
+        {
+          "municip" : "Bergen",
+          "count" : 1
+        }
+      ]
+    },
+    {
+      "date" : "2020-02-29",
+      "municips" : [
+        {
+          "municip" : "Oslo",
+          "count" : 1
+        },
+        {
+          "municip" : "Bergen",
+          "count" : 4
+        }
+      ]
+    },
+    {
+      "date" : "2020-03-01",
+      "municips" : [
+        {
+          "municip" : "Oslo",
+          "count" : 3
+        },
+        {
+          "municip" : "Bergen",
+          "count" : 1
+        },
+        {
+          "municip" : "Enebakk",
+          "count" : 3
+        },
+        {
+          "municip" : "Nes",
+          "count" : 1
+        }
+      ]
+    },
+    {
+      "date" : "2020-03-02",
+      "municips" : [
+        {
+          "municip" : "Bergen",
+          "count" : 1
+        },
+        {
+          "municip" : "Kristiansand",
+          "count" : 2
+        },
+        {
+          "municip" : "Øygarden",
+          "count" : 2
+        }
+      ]
+    },
+    {
+      "date" : "2020-03-03",
+      "municips" : [
+        {
+          "municip" : "Oslo",
+          "count" : 1
+        },
+        {
+          "municip" : "Bergen",
+          "count" : 3
+        },
+        {
+          "municip" : "Tromsø",
+          "count" : 1
+        },
+        {
+          "municip" : "Kristiansand",
+          "count" : 1
+        },
+        {
+          "municip" : "Drammen",
+          "count" : 2
+        },
+        {
+          "municip" : "Ås",
+          "count" : 1
+        }
+      ]
+    },
+    {
+      "date" : "2020-03-04",
+      "municips" : [
+        {
+          "municip" : "Oslo",
+          "count" : 7
+        },
+        {
+          "municip" : "Bergen",
+          "count" : 5
+        },
+        {
+          "municip" : "Bærum",
+          "count" : 3
+        },
+        {
+          "municip" : "Trondheim",
+          "count" : 1
+        },
+        {
+          "municip" : "Molde",
+          "count" : 1
+        },
+        {
+          "municip" : "Haugesund",
+          "count" : 1
+        },
+        {
+          "municip" : "Stavanger",
+          "count" : 1
+        },
+        {
+          "municip" : "Lier",
+          "count" : 1
+        },
+        {
+          "municip" : "Asker",
+          "count" : 1
+        },
+        {
+          "municip" : "Drammen",
+          "count" : 6
+        },
+        {
+          "municip" : "Klepp",
+          "count" : 1
+        },
+        {
+          "municip" : "Nord-Fron",
+          "count" : 3
+        },
+        {
+          "municip" : "Kristiansand",
+          "count" : 2
+        }
+      ]
+    },
+    {
+      "date" : "2020-03-05",
+      "municips" : [
+        {
+          "municip" : "Oslo",
+          "count" : 3
+        },
+        {
+          "municip" : "Bergen",
+          "count" : 5
+        },
+        {
+          "municip" : "Drammen",
+          "count" : 1
+        },
+        {
+          "municip" : "Frosta",
+          "count" : 1
+        },
+        {
+          "municip" : "Sel",
+          "count" : 2
+        },
+        {
+          "municip" : "Ålesund",
+          "count" : 1
+        },
+        {
+          "municip" : "Stavanger",
+          "count" : 2
+        },
+        {
+          "municip" : "Sandnes",
+          "count" : 1
+        },
+        {
+          "municip" : "Fredrikstad",
+          "count" : 1
+        },
+        {
+          "municip" : "Trondheim",
+          "count" : 5
+        },
+        {
+          "municip" : "Skien",
+          "count" : 1
+        },
+        {
+          "municip" : "Finnsnes",
+          "count" : 1
+        },
+        {
+          "municip" : "Asker",
+          "count" : 2
+        },
+        {
+          "municip" : "Kristiansand",
+          "count" : 2
+        },
+        {
+          "municip" : "Bærum",
+          "count" : 2
+        },
+        {
+          "municip" : "Vindafjord",
+          "count" : 1
+        },
+        {
+          "municip" : "Senja",
+          "count" : 1
+        },
+        {
+          "municip" : "Målselv",
+          "count" : 1
+        }
+      ]
+    },
+    {
+      "date" : "2020-03-06",
+      "municips" : [
+        {
+          "municip" : "Levanger",
+          "count" : 1
+        },
+        {
+          "municip" : "Frosta",
+          "count" : 4
+        },
+        {
+          "municip" : "Tysvær",
+          "count" : 1
+        },
+        {
+          "municip" : "Tromsø",
+          "count" : 2
+        },
+        {
+          "municip" : "Oslo",
+          "count" : 5
+        },
+        {
+          "municip" : "Gjesdal",
+          "count" : 2
+        },
+        {
+          "municip" : "Stavanger",
+          "count" : 2
+        },
+        {
+          "municip" : "Trondheim",
+          "count" : 2
+        },
+        {
+          "municip" : "Bergen",
+          "count" : 1
+        },
+        {
+          "municip" : "Malvik",
+          "count" : 2
+        },
+        {
+          "municip" : "Hamar",
+          "count" : 2
+        },
+        {
+          "municip" : "Asker",
+          "count" : 1
+        },
+        {
+          "municip" : "Gjesdal",
+          "count" : 2
+        },
+        {
+          "municip" : "Sel",
+          "count" : 4
+        },
+        {
+          "municip" : "Ringebu",
+          "count" : 1
+        },
+        {
+          "municip" : "Øygarden",
+          "count" : 1
+        },
+        {
+          "municip" : "Nord-Fron",
+          "count" : 1
+        },
+        {
+          "municip" : "Bærum",
+          "count" : 3
+        }
+      ]
+    },
+    {
+      "date" : "2020-03-07",
+      "municips" : [
+        {
+          "municip" : "Kristiansand",
+          "count" : 2
+        },
+        {
+          "municip" : "Frosta",
+          "count" : 3
+        },
+        {
+          "municip" : "Ås",
+          "count" : 2
+        },
+        {
+          "municip" : "Asker",
+          "count" : 1
+        },
+        {
+          "municip" : "Oslo",
+          "count" : 5
+        },
+        {
+          "municip" : "Stavanger",
+          "count" : 3
+        },
+        {
+          "municip" : "Bodø",
+          "count" : 2
+        },
+        {
+          "municip" : "Nittedal",
+          "count" : 2
+        },
+        {
+          "municip" : "Lørenskog",
+          "count" : 3
+        },
+        {
+          "municip" : "Trondheim",
+          "count" : 1
+        }
+      ]
+    },
+    {
+      "date" : "2020-03-08",
+      "municips" : [
+        {
+          "municip" : "Bærum",
+          "count" : 1
+        },
+        {
+          "municip" : "Nesodden",
+          "count" : 2
+        },
+        {
+          "municip" : "Hadsel",
+          "count" : 1
+        },
+        {
+          "municip" : "Frosta",
+          "count" : 1
+        },
+        {
+          "municip" : "Oslo",
+          "count" : 7
+        },
+        {
+          "municip" : "Stavanger",
+          "count" : 1
+        },
+        {
+          "municip" : "Lørenskog",
+          "count" : 3
+        },
+        {
+          "municip" : "Eidsvoll",
+          "count" : 1
+        },
+        {
+          "municip" : "Sandnes",
+          "count" : 2
+        },
+        {
+          "municip" : "Sauda",
+          "count" : 2
+        },
+        {
+          "municip" : "Kristiansand",
+          "count" : 2
+        },
+        {
+          "municip" : "Lillestrøm",
+          "count" : 1
+        }
+      ]
+    },
+    {
+      "date" : "2020-03-09",
+      "municips" : [
+        {
+          "municip" : "Steinkjer",
+          "count" : 1
+        },
+        {
+          "municip" : "Lier",
+          "count" : 1
+        },
+        {
+          "municip" : "Bamble",
+          "count" : 1
+        },
+        {
+          "municip" : "Kvinnherad",
+          "count" : 1
+        },
+        {
+          "municip" : "Time",
+          "count" : 1
+        }
+      ]
+    }
+  ]
 }

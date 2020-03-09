@@ -152,8 +152,8 @@ export const Content = () => {
             let n = new Date(d)
             let day = (n.getDate()).toString().padStart(2, "0")
             let month = (n.getMonth()+1).toString().padStart(2, "0")
-            let year = n.getFullYear().toString().substr(2,2)
-            return `${day}.${month}.${year}`
+            //let year = n.getFullYear().toString().substr(2,2)
+            return `${day}.${month}`
         })
     }
 
