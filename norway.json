@@ -516,6 +516,14 @@
         {
           "municip" : "Sogndal",
           "count" : 1
+        },
+        {
+          "municip" : "Fredrikstad",
+          "count" : 2
+        },
+        {
+          "municip" : "Vestby",
+          "count" : 6
         }
       ]
     }
