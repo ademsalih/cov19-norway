@@ -616,6 +616,10 @@
         {
           "municip" : "Frosta",
           "count" : 3
+        },
+        {
+          "municip" : "Eigersund",
+          "count" : 1
         }
       ]
     }
