@@ -519,7 +519,7 @@
         },
         {
           "municip" : "Fredrikstad",
-          "count" : 1
+          "count" : 2
         },
         {
           "municip" : "Vestby",
@@ -536,6 +536,10 @@
         {
           "municip" : "Oslo",
           "count" : 1
+        },
+        {
+          "municip" : "Bærum",
+          "count" : 7
         }
       ]
     }
