@@ -600,6 +600,14 @@
         {
           "municip" : "Gol",
           "count" : 1
+        },
+        {
+          "municip" : "Sula",
+          "count" : 1
+        },
+        {
+          "municip" : "Larvik",
+          "count" : 1
         }
       ]
     }
