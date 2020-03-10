@@ -550,8 +550,12 @@
           "count" : 7
         },
         {
-          "municip" : "Bærum",
-          "count" : 7
+          "municip" : "Færder",
+          "count" : 3
+        },
+        {
+          "municip" : "Sandefjord",
+          "count" : 5
         }
       ]
     }
