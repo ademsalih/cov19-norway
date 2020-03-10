@@ -540,6 +540,10 @@
         {
           "municip" : "Bærum",
           "count" : 7
+        },
+        {
+          "municip" : "Oppdal",
+          "count" : 1
         }
       ]
     }
