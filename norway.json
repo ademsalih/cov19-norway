@@ -588,6 +588,18 @@
         {
           "municip" : "Moss",
           "count" : 1
+        },
+        {
+          "municip" : "Ullensaker",
+          "count" : 5
+        },
+        {
+          "municip" : "Nes",
+          "count" : 1
+        },
+        {
+          "municip" : "Gol",
+          "count" : 1
         }
       ]
     }
