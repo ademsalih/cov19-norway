@@ -512,6 +512,10 @@
         {
           "municip" : "Frosta",
           "count" : 3
+        },
+        {
+          "municip" : "Sogndal",
+          "count" : 1
         }
       ]
     }
