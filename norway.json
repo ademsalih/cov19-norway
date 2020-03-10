@@ -608,6 +608,14 @@
         {
           "municip" : "Larvik",
           "count" : 1
+        },
+        {
+          "municip" : "Lørenskog",
+          "count" : 3
+        },
+        {
+          "municip" : "Frosta",
+          "count" : 3
         }
       ]
     }
