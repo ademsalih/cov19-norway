@@ -544,6 +544,10 @@
         {
           "municip" : "Oppdal",
           "count" : 1
+        },
+        {
+          "municip" : "Vestby",
+          "count" : 7
         }
       ]
     }
