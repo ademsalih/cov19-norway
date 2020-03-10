@@ -548,6 +548,10 @@
         {
           "municip" : "Vestby",
           "count" : 7
+        },
+        {
+          "municip" : "Bærum",
+          "count" : 8
         }
       ]
     }
