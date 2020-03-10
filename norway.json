@@ -528,6 +528,10 @@
         {
           "municip" : "Time",
           "count" : 1
+        },
+        {
+          "municip" : "Sogndal",
+          "count" : 1
         }
       ]
     }
