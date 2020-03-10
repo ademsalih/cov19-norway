@@ -572,6 +572,22 @@
         {
           "municip" : "Bergen",
           "count" : 9
+        },
+        {
+          "municip" : "Kristiansand",
+          "count" : 10
+        },
+        {
+          "municip" : "Randaberg",
+          "count" : 1
+        },
+        {
+          "municip" : "Frogn",
+          "count" : 4
+        },
+        {
+          "municip" : "Moss",
+          "count" : 1
         }
       ]
     }
