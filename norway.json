@@ -556,6 +556,14 @@
         {
           "municip" : "Sandefjord",
           "count" : 5
+        },
+        {
+          "municip" : "Stavanger",
+          "count" : 7
+        },
+        {
+          "municip" : "Sel",
+          "count" : 2
         }
       ]
     }
