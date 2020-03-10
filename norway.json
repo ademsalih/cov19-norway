@@ -422,6 +422,10 @@
         {
           "municip" : "Lillestrøm",
           "count" : 1
+        },
+        {
+          "municip" : "Time",
+          "count" : 1
         }
       ]
     },
@@ -442,10 +446,6 @@
         },
         {
           "municip" : "Kvinnherad",
-          "count" : 1
-        },
-        {
-          "municip" : "Time",
           "count" : 1
         },
         {
@@ -524,6 +524,10 @@
         {
           "municip" : "Vestby",
           "count" : 7
+        },
+        {
+          "municip" : "Time",
+          "count" : 1
         }
       ]
     }
