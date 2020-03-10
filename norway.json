@@ -568,6 +568,10 @@
         {
           "municip" : "Sel",
           "count" : 2
+        },
+        {
+          "municip" : "Bergen",
+          "count" : 9
         }
       ]
     }
