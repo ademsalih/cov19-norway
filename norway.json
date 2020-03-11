@@ -633,7 +633,12 @@
     },
     {
       "date" : "2020-03-10",
-      "municips" : []
+      "municips" : [
+        {
+          "municip" : "Sogndal",
+          "count" : 2
+        }
+      ]
     }
   ]
 }
