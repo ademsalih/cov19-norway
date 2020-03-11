@@ -623,18 +623,13 @@
         },
         {
           "municip" : "Ukjent",
-          "count" : 50
+          "count" : 70
         }
       ]
     },
     {
       "date" : "2020-03-10",
-      "municips" : [
-        {
-          "municip" : "Frosta",
-          "count" : 3
-        }
-      ]
+      "municips" : []
     }
   ]
 }
