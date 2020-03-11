@@ -620,6 +620,19 @@
         {
           "municip" : "Eigersund",
           "count" : 1
+        },
+        {
+          "municip" : "Ukjent",
+          "count" : 50
+        }
+      ]
+    },
+    {
+      "date" : "2020-03-10",
+      "municips" : [
+        {
+          "municip" : "Frosta",
+          "count" : 3
         }
       ]
     }
