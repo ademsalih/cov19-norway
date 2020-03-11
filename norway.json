@@ -637,6 +637,46 @@
         {
           "municip" : "Sogndal",
           "count" : 2
+        },
+        {
+          "municip" : "Frosta",
+          "count" : 7
+        },
+        {
+          "municip" : "Tromsø",
+          "count" : 1
+        },
+        {
+          "municip" : "Fredrikstad",
+          "count" : 2
+        },
+        {
+          "municip" : "Stjørdal",
+          "count" : 1
+        },
+        {
+          "municip" : "Vestby",
+          "count" : 3
+        },
+        {
+          "municip" : "Drammen",
+          "count" : 2
+        },
+        {
+          "municip" : "Skiptvet",
+          "count" : 1
+        },
+        {
+          "municip" : "Lyngdal",
+          "count" : 1
+        },
+        {
+          "municip" : "Aurskog-Høland",
+          "count" : 1
+        },
+        {
+          "municip" : "Ukjent",
+          "count" : 12
         }
       ]
     }
