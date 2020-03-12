@@ -515,11 +515,11 @@
       "municips" : [
         {
           "municip" : "Frosta",
-          "count" : 3
+          "count" : 4
         },
         {
           "municip" : "Sogndal",
-          "count" : 1
+          "count" : 2
         },
         {
           "municip" : "Fredrikstad",
@@ -539,11 +539,11 @@
         },
         {
           "municip" : "Oslo",
-          "count" : 19
+          "count" : 16
         },
         {
           "municip" : "Bærum",
-          "count" : 7
+          "count" : 19
         },
         {
           "municip" : "Oppdal",
@@ -563,7 +563,7 @@
         },
         {
           "municip" : "Stavanger",
-          "count" : 14
+          "count" : 21
         },
         {
           "municip" : "Sel",
@@ -575,7 +575,7 @@
         },
         {
           "municip" : "Kristiansand",
-          "count" : 10
+          "count" : 11
         },
         {
           "municip" : "Randaberg",
@@ -591,11 +591,11 @@
         },
         {
           "municip" : "Ullensaker",
-          "count" : 5
+          "count" : 1
         },
         {
           "municip" : "Nes",
-          "count" : 1
+          "count" : 5
         },
         {
           "municip" : "Gol",
@@ -622,17 +622,89 @@
           "count" : 1
         },
         {
-          "municip" : "Ukjent",
-          "count" : 47
-        },
-        {
           "municip" : "Farsund",
           "count" : 8
+        },
+        {
+          "municip" : "Indre Østfold",
+          "count" : 10
+        },
+        {
+          "municip" : "Bergen",
+          "count" : 2
+        },
+        {
+          "municip" : "Ålesund",
+          "count" : 1
+        },
+        {
+          "municip" : "Ringsaker",
+          "count" : 4
+        },
+        {
+          "municip" : "Trondheim",
+          "count" : 3
+        },
+        {
+          "municip" : "Enebakk",
+          "count" : 1
+        },
+        {
+          "municip" : "Sola",
+          "count" : 5
+        },
+        {
+          "municip" : "Sarpsborg",
+          "count" : 1
+        },
+        {
+          "municip" : "Lillestrøm",
+          "count" : 1
+        },
+        {
+          "municip" : "Østre Toten",
+          "count" : 1
+        },
+        {
+          "municip" : "Nord-Aurdal",
+          "count" : 1
+        },
+        {
+          "municip" : "Hemsedal",
+          "count" : 1
+        },
+        {
+          "municip" : "Gausdal",
+          "count" : 2
+        },
+        {
+          "municip" : "Øygarden",
+          "count" : 1
+        },
+        {
+          "municip" : "Holmestrand",
+          "count" : 1
+        },
+        {
+          "municip" : "Asker",
+          "count" : 7
+        },
+        {
+          "municip" : "Asker",
+          "count" : 7
+        },
+        {
+          "municip" : "Sandnes",
+          "count" : 4
+        },
+        {
+          "municip" : "Hå",
+          "count" : 1
         }
       ]
     },
     {
-      "date" : "2020-03-10",
+      "date" : "2020-03-11",
       "municips" : [
         {
           "municip" : "Sogndal",
@@ -675,8 +747,189 @@
           "count" : 1
         },
         {
-          "municip" : "Ukjent",
-          "count" : 18
+          "municip" : "Nordre Follo",
+          "count" : 2
+        },
+        {
+          "municip" : "Bærum",
+          "count" : 12
+        },
+        {
+          "municip" : "Tønsberg",
+          "count" : 7
+        },
+        {
+          "municip" : "Skien",
+          "count" : 5
+        },
+        {
+          "municip" : "Selbu",
+          "count" : 1
+        },
+        {
+          "municip" : "Åmli",
+          "count" : 1
+        },
+        {
+          "municip" : "Lørenskog",
+          "count" : 3
+        },
+        {
+          "municip" : "Kongsberg",
+          "count" : 5
+        },
+        {
+          "municip" : "Time",
+          "count" : 2
+        },
+        {
+          "municip" : "Eigersund",
+          "count" : 1
+        },
+        {
+          "municip" : "Sel",
+          "count" : 8
+        },
+        {
+          "municip" : "Bergen",
+          "count" : 7
+        },
+        {
+          "municip" : "Stryn",
+          "count" : 6
+        },
+        {
+          "municip" : "Lillehammer",
+          "count" : 2
+        },
+        {
+          "municip" : "Ringsaker",
+          "count" : 2
+        },
+        {
+          "municip" : "Sandefjord",
+          "count" : 1
+        },
+        {
+          "municip" : "Rauma",
+          "count" : 1
+        },
+        {
+          "municip" : "Oslo",
+          "count" : 90
+        },
+        {
+          "municip" : "Randaberg",
+          "count" : 3
+        },
+        {
+          "municip" : "Jevnaker",
+          "count" : 1
+        },
+        {
+          "municip" : "Øygarden",
+          "count" : 2
+        },
+        {
+          "municip" : "Asker",
+          "count" : 4
+        },
+        {
+          "municip" : "Ålesund",
+          "count" : 2
+        },
+        {
+          "municip" : "Trondheim",
+          "count" : 10
+        },
+        {
+          "municip" : "Ringebu",
+          "count" : 2
+        },
+        {
+          "municip" : "Indre Østfold",
+          "count" : 2
+        },
+        {
+          "municip" : "Klepp",
+          "count" : 1
+        },
+        {
+          "municip" : "Nittedal",
+          "count" : 1
+        },
+        {
+          "municip" : "Bjørnafjorden",
+          "count" : 1
+        },
+        {
+          "municip" : "Frogn",
+          "count" : 2
+        },
+        {
+          "municip" : "Stavanger",
+          "count" : 10
+        },
+        {
+          "municip" : "Sandnes",
+          "count" : 5
+        },
+        {
+          "municip" : "Ørsta",
+          "count" : 1
+        },
+        {
+          "municip" : "Løten",
+          "count" : 1
+        },
+        {
+          "municip" : "Rælingen",
+          "count" : 1
+        },
+        {
+          "municip" : "Lillestrøm",
+          "count" : 1
+        },
+        {
+          "municip" : "Enebakk",
+          "count" : 1
+        },
+        {
+          "municip" : "Sola",
+          "count" : 2
+        }
+      ]
+    },
+    {
+      "date" : "2020-03-12",
+      "municips" : [
+        {
+          "municip" : "Austevoll",
+          "count" : 1
+        },
+        {
+          "municip" : "Ås",
+          "count" : 3
+        },
+        {
+          "municip" : "Frosta",
+          "count" : 2
+        },
+        {
+          "municip" : "Fredrikstad",
+          "count" : 2
+        },
+        {
+          "municip" : "Nesbyen",
+          "count" : 1
+        },
+        {
+          "municip" : "Sveio",
+          "count" : 1
+        },
+        {
+          "municip" : "Tromsø",
+          "count" : 2
         }
       ]
     }
